@@ -13,12 +13,32 @@
 
 <body>
  
-    <nav class="nav bg-success ">
-        <img src="../img/pizza-argentina.jpg" alt="Bootstrap" width="30" height="24">
-        <a class="nav-link text-white active" aria-current="page" href="#">Active</a>
-        <a class="nav-link text-white" href="#">Link</a>
-        <a class="nav-link text-white" href="#">Link</a>
-    </nav>
+   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Rolling Delivery</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Enlace</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link disabled">Deshabilitado</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Buscar" aria-label="Buscar">
+        <button class="btn btn-outline-success" type="submit">Buscar</button>
+      </form>
+    </div>
+  </div>
+</nav>
 
 
     <main class="container-fluid ">
@@ -26,12 +46,28 @@
             <h1>Pizzas</h1>
         </section>
         <section class="row d-flex shadow p-3 mt-3">
-            <img src="../img/pizza-argentina.jpg" class="col-lg-4 col-md-5 img-thumbnail p-2 me-4 mb-3" alt="...">
+            <img src="../img/pizza-argentina.jpg" class="col-lg-4 col-md-6 img-thumbnail p-2 me-4 mb-3" alt="...">
             <section class="col-lg-7 col-md-5">
                 <h2 class="h1">Pizza Especial</h2>
                 <h3 class="h1">$1500</h3>
                 <p class="display-6">Pizza de 8 porciones, con Muzzarella, Jamón, Morrones y Aceitunas</p>
                 <p>Cod. 4457</p>
+                <form action="">
+                  <select class="form-select" aria-label="Default select example">
+                  <option selected>Cantidad</option>
+                  <option value="1">1 Unidad</option>
+                  <option value="2">2 Unidades</option>
+                  <option value="3">3 Unidades</option>
+                  <option value="4">4 Unidades</option>
+                  <option value="5">5 Unidades</option>
+                  <option value="6">6 Unidades</option>
+                  <option value="7">7 Unidades</option>
+                  <option value="8">8 Unidades</option>
+                  <option value="9">9 Unidades</option>
+                </select>
+                <button type="button" class="btn btn-primary btn-lg mt-2">Agregar al pedido</button>
+                </form>
+                
             </section>
         </section>
         <section class="shadow mt-4 bg-primary   p-3">
