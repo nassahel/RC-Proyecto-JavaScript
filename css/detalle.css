@@ -1,3 +1,9 @@
 .formu {
     max-width: 15rem;
 }
+
+
+.redesSociales img {
+    width: 4vh;
+    margin: 0 0.2vh;
+}
