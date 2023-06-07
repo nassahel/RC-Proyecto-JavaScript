@@ -1,3 +1,10 @@
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
 .formu {
     max-width: 15rem;
 }
@@ -6,4 +13,9 @@
 .redesSociales img {
     width: 4vh;
     margin: 0 0.2vh;
+}
+
+
+footer {
+    margin-top: auto;
 }
