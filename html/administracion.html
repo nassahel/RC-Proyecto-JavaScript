@@ -13,6 +13,48 @@
 
 <body>
 
+<!-----------------------MODAL-------------------->
+
+<div class="modal fade" tabindex="-1" id="modalAgregar">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Agregar producto</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+            <form>
+                <div class="mb-3">
+                  <label for="product-name" class="col-form-label">Categoria:</label>
+                  <input type="text" class="form-control" id="recipient-name">
+                </div>
+                <div class="mb-3">
+                    <label for="product-name" class="col-form-label">Nombre:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="product-name" class="col-form-label">Precio:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                  <div class="mb-3">
+                    <label for="product-name" class="col-form-label">Descripción:</label>
+                    <input type="text" class="form-control" id="recipient-name">
+                  </div>
+                
+              </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+
+
       <!-----------------------INICIO DEL NAV-------------------->
   <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4 shadow sticky-top"
   style="background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
@@ -41,7 +83,7 @@
             <li><a class="dropdown-item" href="#">Empanadas</a></li>
             <li><a class="dropdown-item" href="#">Pizzas</a></li>
             <li><a class="dropdown-item" href="#">Bebidas</a></li>
-            <li><a class="dropdown-item" href="#">Minuta</a></li>
+            <li><a class="dropdown-item" href="#">Minutas</a></li>
             <li><a class="dropdown-item" href="#">Sandwiches</a></li>
 
 
@@ -75,40 +117,58 @@
         <section class="text-center mt-4">
             <h1>Administración</h1>
         </section>
-        <section class="container-fluid col-lg-7 text-center mt-5">
+        <section class="container-fluid col-lg-7 text-sm-justify text-lg-center mt-5">
             <table class="table table-striped">
                 <thead>
+                    <th>Borrar</th>
                     <th>Categoria</th>
                     <th>Producto</th>
                     <th>Precio</th>
                     <th>Descripcion</th>
-                    <th>Disponibilidad</th>
+                    
 
                 </thead>
 
                 <tbody>
                     <tr>
+                        <td><input type="checkbox" name="" id="check-d"></td>
                         <td>Pizzas</td>
                         <td>Especial</td>
                         <td>$1800</td>
                         <td>Pizza con jamon, morrones y aceitunas</td>
-                        <td>Disponible</td>
+                        
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id="check-d"></td>
+                        <td>Pizzas</td>
+                        <td>Cuatro quesos</td>
+                        <td>$1700</td>
+                        <td>Pizza con muzzarella, roquefort, gouda y parmesano</td>
+                        
+                    </tr>
+                    <tr>
+                        <td><input type="checkbox" name="" id="check-d"></td>
+                        <td>Pizzas</td>
+                        <td>Calabresa</td>
+                        <td>$1900</td>
+                        <td>Pizza con muzzarella, cantimpalo, aitunas verdes y chimi pizzero</td>
+                
                     </tr>
 
                 </tbody>
             </table>
         </section>
         <section class="container-fluid col-lg-7 text-center mt-5">
-            <button class="btn btn-success" type="submit">Agregar Producto</button>
-            <button class="btn btn-primary" type="submit">Editar Producto</button>
-            <button class="btn btn-danger" type="submit">Borrar Producto</button>
+            <button class="btn btn-success" type="button" data-bs-toggle="modal" data-bs-target="#modalAgregar" >Agregar Producto</button>
+            <button class="btn btn-primary" type="button">Editar Producto</button>
+            <button class="btn btn-danger" type="button">Borrar Producto</button>
         </section>
     </main>
 
     <!-----------------------FIN DEL MAIN-------------------->
 
      <!-----------------------INICIO DEL FOOTER-------------------->
-  <footer class="container-fluid p-3 mt-4 " style="background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
+  <footer class="container-fluid p-3" style="background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
     <section class="row d-flex align-items-center justify-content-between text-center">
       <section class="redesSociales col-sm-11 col-lg-4 mb-1">
         <a href="#"><img src="../img/instagram.png" alt=""></a>
@@ -116,10 +176,10 @@
         <a href="3"><img src="../img/whatsapp.png" alt=""></a>
       </section>
       <section class="col-sm-11 col-lg-4 mb-1">
-        Copyright 2023 derechos reservados
+      <p>RC Delivery® <br> Todos los derechos registrdos</p> 
       </section>
       <section class="col-sm-11 col-lg-4 mb-1">
-        <a href="#">Acerca de nosotros</a>
+        <a href="#" class="text-decoration-none">Acerca de nosotros</a>
       </section>
 
     </section>
