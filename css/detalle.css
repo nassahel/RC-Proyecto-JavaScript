@@ -1,8 +1,19 @@
 
+:root {
+    --yale-blue: #0d3b66ff;
+--lemon-chiffon: #faf0caff;
+--naples-yellow: #f4d35eff;
+--sandy-brown: #ee964bff;
+--tomato: #f95738ff;
+}
+
+
+
 body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    background-color: var(--naples-yellow);
 }
 
 .formu {
@@ -18,4 +29,32 @@ body {
 
 footer {
     margin-top: auto;
+}
+
+
+.navbar {
+    background-color: #F4D35E;
+}
+
+.categoria, .recomendados, footer {
+    background-color: #F95738;
+}
+
+.product, .dropdown-menu {
+    background-color: var(--sandy-brown);
+}
+
+.btn-pedido {
+    background-color: var(--yale-blue);
+    color: whitesmoke;
+}
+
+.btn-pedido:hover {
+    background-color: rgb(24, 101, 173);
+    color: whitesmoke;
+}
+
+.btn-pedido:active {
+    background-color:rgb(31, 127, 216) !important;
+    color: whitesmoke !important;
 }

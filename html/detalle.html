@@ -14,11 +14,10 @@
 <body>
 
   <!-----------------------INICIO DEL NAV-------------------->
-  <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4 shadow sticky-top"
-    style="background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
+  <nav class="navbar navbar-expand-lg mb-4 shadow sticky-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
-        <img class="img-thumbnail" src="logo1.png" alt="Logo" style="width: 100px;">
+        <img class="img" src="../img/logo-transparent.png" alt="Logo" style="width: 100px;">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
         aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -43,8 +42,6 @@
               <li><a class="dropdown-item" href="#">Bebidas</a></li>
               <li><a class="dropdown-item" href="#">Minutas</a></li>
               <li><a class="dropdown-item" href="#">Sandwiches</a></li>
-
-
             </ul>
           </li>
           <li class="nav-item d-none d-lg-block w-100">
@@ -72,10 +69,10 @@
   <!-----------------------INICIO DEL MAIN-------------------->
 
   <main class="container-fluid col-lg-9 col-sm-12">
-    <section class="row p-3 bg-primary text-white">
+    <section class="row categoria p-3 text-white">
       <h1>Pizzas</h1>
     </section>
-    <section class="row d-flex shadow p-3 mt-3">
+    <section class="row d-flex product shadow p-3 mt-3">
       <img src="../img/pizza-argentina.jpg" class="col-lg-4 col-md-6 img-thumbnail p-2 me-4 mb-3" alt="...">
       <section class="col-lg-7 col-md-5">
         <h2 class="h1">Pizza Especial</h2>
@@ -95,14 +92,14 @@
             <option value="8">8 Unidades</option>
             <option value="9">9 Unidades</option>
           </select>
-          <button type="button" class="btn btn-primary btn-lg mt-2">Agregar al pedido</button>
+          <button type="button" class="btn btn-pedido btn-lg mt-2">Agregar al pedido</button>
         </form>
 
       </section>
     </section>
 
 
-    <section class="container-fluid shadow my-4 bg-primary p-3">
+    <section class="container-fluid recomendados shadow my-4  p-3">
       <h2 class="text-white mb-4">Otros platos recomendados</h2>
       <section class="row row-cols-2 row-cols-md-3 row-cols-lg-6">
         <div class="col mb-4">
@@ -129,8 +126,8 @@
   <!-----------------------FIN DEL MAIN-------------------->
 
   <!-----------------------INICIO DEL FOOTER-------------------->
-  <footer class="container-fluid p-3 " style="background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
-    <section class="row d-flex align-items-center justify-content-between text-center">
+  <footer class="container-fluid p-3">
+    <section class="row d-flex align-items-center justify-content-between text-center text-white">
       <section class="redesSociales col-sm-11 col-lg-4 mb-1">
         <a href="#"><img src="../img/instagram.png" alt=""></a>
         <a href="#"><img src="../img/facebook.png" alt=""></a>
@@ -140,7 +137,7 @@
         Copyright 2023 derechos reservados
       </section>
       <section class="col-sm-11 col-lg-4 mb-1">
-        <a href="#" class="text-decoration-none">Acerca de nosotros</a>
+        <a href="#" class="text-decoration-none text-white">Acerca de nosotros</a>
       </section>
 
     </section>
