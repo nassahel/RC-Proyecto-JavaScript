@@ -2,8 +2,19 @@
     background: rgb(232, 216, 227);
     max-width: 200px;
     height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
 }
 .card img{
     max-width: 100px;
     height: 100px;
+}
+#products{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }

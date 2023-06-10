@@ -1,4 +1,4 @@
-const fruts= [
+const lomasbuscado= [
     {name: 'Pizza Napolitana',
      price: 1800,
      url:'https://avantipizzas.com.ar/wp-content/uploads/2022/04/napolitana-con-albahaca-pizzas-avanti-300x300.jpg'},
@@ -13,16 +13,19 @@ const fruts= [
      url:'https://trajineras.com/wp-content/uploads/2020/02/cocacola_2.5lts.png'}   
 ]
 
-const frutSection = document.querySelector('#fruts');
 
-fruts.forEach(function (frut) {
+const buscadoSection = document.querySelector('#lomasbuscado');
+
+lomasbuscado.forEach(function (buscado) {
     let card = document.createElement('div');
+    card.classList.add('card')
+
     let item =`
-    <img src=${frut.url} alt=${frut.name}/>
-    <p>${frut.name}</p>
-    <p>${frut.price}</p>
+    <img src=${buscado.url} alt=${buscado.name}/>
+    <p>${buscado.name}</p>
+    <p>${buscado.price}</p>
     `;
     
     card.innerHTML = item;
-    frutSection.appendChild(card);
+    buscadoSection.appendChild(card);
 })
