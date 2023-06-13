@@ -11,6 +11,60 @@
     /* las tarjetas o secciones van con sombra */
 }
 
+.navbar {
+    background-color: rgb(27, 2, 44);
+}
+
+.categoria {
+    background-color: #F95738;
+}
+
+.product,
+.dropdown-menu {
+    background-color: white;
+}
+
+.btn-pedido {
+    background-color: var(--yale-blue-boton);
+    color: whitesmoke;
+}
+
+.btn-pedido:hover {
+    background-color: rgb(24, 101, 173);
+    color: whitesmoke;
+}
+
+.btn-pedido:active {
+    background-color: rgb(31, 127, 216) !important;
+    color: whitesmoke !important;
+}
+
+.btn-buscar {
+    background: var(--dregradado);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: var(--naples-yellow); */
+    background: var(--dregradado);
+}
+
+
+.logo-carrito {
+    width: 50px;
+}
+
+.formu {
+    max-width: 15rem;
+}
+
+
+.redesSociales img {
+    width: 4vh;
+    margin: 0 0.2vh;
+}
 
 
 
