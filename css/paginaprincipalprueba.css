@@ -4,7 +4,7 @@
     justify-content: center;
 }
 .letter{
-    transition: 0.4s;
+    transition: 2.9s;
     transform: translateX(0);
     cursor: grab;
     color: #0d0d0e;
@@ -74,7 +74,10 @@ body {
     /* background-color: var(--naples-yellow); */
     background: var(--dregradado);
 }
-
+footer {
+    margin-top: auto;
+    background: var(--moradito);
+}
 
 .logo-carrito {
     width: 50px;
