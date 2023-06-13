@@ -1,12 +1,13 @@
-
 :root {
-    --yale-blue: rgb(59, 137, 211);
---lemon-chiffon: #faf0caff;
---naples-yellow: #f4d35eff;
---sandy-brown: #ee964bff;
---tomato: rgb(226, 214, 240);
---dregradado: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
---moradito: rgb(27, 2, 44);
+    --yale-blue-boton: rgb(59, 137, 211);
+    --naranja-categoria: #ee964bff;
+    --celeste-hover: rgb(226, 214, 240);
+    --dregradado: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    --moradito: rgb(27, 2, 44);
+    --boton-hover: rgb(24, 101, 173);
+    --boton-active: rgb(31, 127, 216);
+    /* texto de boton: blanco */
+    /* las tarjetas o secciones van con sombra */
 }
 
 
@@ -23,6 +24,7 @@ body {
 .logo-carrito {
     width: 50px;
 }
+
 .formu {
     max-width: 15rem;
 }
@@ -48,12 +50,13 @@ footer {
     background-color: #F95738;
 }
 
-.product, .dropdown-menu {
+.product,
+.dropdown-menu {
     background-color: white;
 }
 
 .btn-pedido {
-    background-color: var(--yale-blue);
+    background-color: var(--yale-blue-boton);
     color: whitesmoke;
 }
 
@@ -63,7 +66,7 @@ footer {
 }
 
 .btn-pedido:active {
-    background-color:rgb(31, 127, 216) !important;
+    background-color: rgb(31, 127, 216) !important;
     color: whitesmoke !important;
 }
 
