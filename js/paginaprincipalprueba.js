@@ -17,7 +17,7 @@ const lomasbuscado= [
      price: 700,
      url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrVXyPS5zCxuNgSQneFSpZek0whs9ZGHFV1g&usqp=CAU',
      },
-     {name:'Empanda de jamon y queso',
+     {name:'Empanada de jamon y queso',
      price: 250,
      url:'https://www.cucinare.tv/wp-content/uploads/2020/01/Empanadas-de-jamon-y-queso-300x300.jpg',
     }
@@ -142,7 +142,7 @@ const empanadas=[
      price: 250,
      url:'https://www.deliciosi.com/images/100/134/empanadas-caprese.jpg',
     },
-    {name:'Empanda de jamon y queso',
+    {name:'Empanada de jamon y queso',
      price: 250,
      url:'https://www.cucinare.tv/wp-content/uploads/2020/01/Empanadas-de-jamon-y-queso-300x300.jpg',
     },
