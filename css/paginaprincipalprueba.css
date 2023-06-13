@@ -90,7 +90,10 @@ body {
     margin: 0 0.2vh;
 }
 
-
+.submit{
+    align-items: center;
+    text-align: center;
+}
 
 .products1 {
     display: flex;
