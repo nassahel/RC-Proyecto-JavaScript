@@ -1,10 +1,12 @@
 
 :root {
-    --yale-blue: #0d3b66ff;
+    --yale-blue: rgb(59, 137, 211);
 --lemon-chiffon: #faf0caff;
 --naples-yellow: #f4d35eff;
 --sandy-brown: #ee964bff;
---tomato: #f95738ff;
+--tomato: rgb(226, 214, 240);
+--dregradado: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+--moradito: rgb(27, 2, 44);
 }
 
 
@@ -13,9 +15,14 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    background-color: var(--naples-yellow);
+    /* background-color: var(--naples-yellow); */
+    background: var(--dregradado);
 }
 
+
+.logo-carrito {
+    width: 50px;
+}
 .formu {
     max-width: 15rem;
 }
@@ -29,19 +36,20 @@ body {
 
 footer {
     margin-top: auto;
+    background: var(--moradito);
 }
 
 
 .navbar {
-    background-color: #F4D35E;
+    background-color: rgb(27, 2, 44);
 }
 
-.categoria, .recomendados, footer {
+.categoria {
     background-color: #F95738;
 }
 
 .product, .dropdown-menu {
-    background-color: var(--sandy-brown);
+    background-color: white;
 }
 
 .btn-pedido {
@@ -57,4 +65,8 @@ footer {
 .btn-pedido:active {
     background-color:rgb(31, 127, 216) !important;
     color: whitesmoke !important;
+}
+
+.btn-buscar {
+    background: var(--dregradado);
 }

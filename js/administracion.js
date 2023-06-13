@@ -38,7 +38,6 @@ function agregarProductos() {
     let txtNombre = document.getElementById('agregarNombre').value;
     let txtPrecio = document.getElementById('agregarPrecio').value;
     let txtDescripcion = document.getElementById('agregarDescripcion').value;
-    let checkB = document.getElementById("check-d").value;
     let txtId = document.getElementById('agregarId').value;
 
     productos.push({
@@ -46,7 +45,7 @@ function agregarProductos() {
         precio: txtPrecio,
         descripcion: txtDescripcion,
         id: txtId,
-        check: checkB
+        check: false
 
     })
 
@@ -57,7 +56,8 @@ function agregarProductos() {
         let agregarFila = document.createElement('tr')
         agregarFila.id = 'new-tr';
         agregarFila.innerHTML = `
-        <td><input type="checkbox" name="" id="check-d"></td>
+        <td><input type="checkbox" name="" id="check-d""></td>
+        
         <td>${txtCategoria}</td>
         <td>${txtNombre}</td>
         <td>$${txtPrecio}</td>
@@ -72,10 +72,10 @@ function agregarProductos() {
 
 
 function borrarproducto () {
+productos.filter(function(product) {
+    let checkB = document.getElementById("check-d").checked;
+    product.check.checked;
 
-    productos.forEach()
-    let checkB = document.getElementById("check-d").value;
-
+})    
 }
-
 
