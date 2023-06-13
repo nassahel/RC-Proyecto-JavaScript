@@ -69,3 +69,87 @@ pizzas.forEach(function (Pizza) {
     pizzaSection.appendChild(card);
     
 })
+/// MINUTAS ////
+
+const minutas=[
+
+]
+const minutaSection = document.querySelector('#minutas');
+
+minutas.forEach(function (Minutas) {
+    let card = document.createElement('div');
+    card.classList.add('card')
+
+    let item = ` 
+    <img src=${Minutas.url} alt=${Minutas.name}/>
+    <p>${Minutas.name}</p>
+    <p>${Minutas.price}</p>
+    `;
+
+    card.innerHTML = item;
+    minutaSection.appendChild(card);
+    
+})
+/// EMPANADASSS ////
+
+const empanadas=[
+
+]
+const empanadaSection = document.querySelector('#empanadas');
+
+empanadas.forEach(function (Empanadas) {
+    let card = document.createElement('div');
+    card.classList.add('card')
+
+    let item = ` 
+    <img src=${Empanadas.url} alt=${Empanadas.name}/>
+    <p>${Empanadas.name}</p>
+    <p>${Empanadas.price}</p>
+    `;
+
+    card.innerHTML = item;
+    empanadaSection.appendChild(card);
+    
+})
+//// SANDWICHES ///
+
+const sandwiches= [
+
+]
+const sandwichwsection = document.querySelector('#sandwiches');
+
+sandwiches.forEach(function (Sandiwiches) {
+    let card = document.createElement('div');
+    card.classList.add('card')
+
+    let item = ` 
+    <img src=${Sandiwiches.url} alt=${Sandiwiches.name}/>
+    <p>${Sandiwiches.name}</p>
+    <p>${Sandiwiches.price}</p>
+    `;
+
+    card.innerHTML = item;
+    sandwichwsection.appendChild(card);
+    
+})
+/// BEBIDAS //
+const bebidas=[
+
+]
+
+const bebidaSection = document.querySelector('#bebidas');
+
+bebidas.forEach(function (Bebidas) {
+    let card = document.createElement('div');
+    card.classList.add('card')
+
+    let item = ` 
+    <img src=${Bebidas.url} alt=${Bebidas.name}/>
+    <p>${Bebidas.name}</p>
+    <p>${Bebidas.price}</p>
+    `;
+
+    card.innerHTML = item;
+    bebidaSection.appendChild(card);
+    
+})

@@ -1,3 +1,19 @@
+
+:root {
+    --yale-blue-boton: rgb(59, 137, 211);
+    --naranja-categoria: #ee964bff;
+    --celeste-hover: rgb(226, 214, 240);
+    --dregradado: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    --moradito: rgb(27, 2, 44);
+    --boton-hover: rgb(24, 101, 173);
+    --boton-active: rgb(31, 127, 216);
+    /* texto de boton: blanco */
+    /* las tarjetas o secciones van con sombra */
+}
+
+
+
+
 .products1 {
     display: flex;
     flex-direction: column;
@@ -35,6 +51,58 @@
     gap: 2rem;
 }
 #pizzas {
+    display: flex;
+    gap: 2rem;
+}
+.products3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(79, 21, 214);
+    gap: 2rem;
+}
+#minutas {
+    display: flex;
+    gap: 2rem;
+}
+.products4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(17, 233, 96);
+    gap: 2rem;
+}
+#empanadas {
+    display: flex;
+    gap: 2rem;
+}
+.products5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(9, 191, 232);
+    gap: 2rem;
+}
+#sandwiches {
+    display: flex;
+    gap: 2rem;
+}
+.products6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: rgb(236, 9, 190);
+    gap: 2rem;
+}
+#bebidas {
     display: flex;
     gap: 2rem;
 }
