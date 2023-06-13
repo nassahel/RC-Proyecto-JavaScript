@@ -1,3 +1,27 @@
+.animated-word{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.letter{
+    transition: 0.4s;
+    transform: translateX(0);
+    cursor: grab;
+    color: #0d0d0e;
+}
+.letter:hover{
+    transform: translateY(-10rem);
+    background: -webkit-linear-gradient(120deg,hsl(19, 90%, 52%), hsl(56, 100% 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+
+
+
+
+
 
 :root {
     --yale-blue-boton: rgb(59, 137, 211);
@@ -81,6 +105,7 @@ body {
     display: flex;
     gap: 2rem;
 }
+
 .card{
     background: rgb(232, 216, 227);
     max-width: 200px;
@@ -92,6 +117,7 @@ body {
     margin-bottom: 20px;
 }
 .card img{
+    margin: 30px;
     max-width: 100px;
     height: 100px;
 }

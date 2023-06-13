@@ -1,3 +1,4 @@
+
 /// LO MAS BUSCADO //
 const lomasbuscado= [
     {name: 'Pizza Napolitana',
@@ -11,7 +12,16 @@ const lomasbuscado= [
      url:'https://www.shutterstock.com/image-photo/sandwich-de-milanesa-con-huevo-260nw-2178793257.jpg'},
     {name:'Coca cola 2lts',
      price: 850,
-     url:'https://trajineras.com/wp-content/uploads/2020/02/cocacola_2.5lts.png'}   
+     url:'https://trajineras.com/wp-content/uploads/2020/02/cocacola_2.5lts.png'},
+     {name:'Cerveza Quilmes',
+     price: 700,
+     url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrVXyPS5zCxuNgSQneFSpZek0whs9ZGHFV1g&usqp=CAU',
+     },
+     {name:'Empanda de jamon y queso',
+     price: 250,
+     url:'https://www.cucinare.tv/wp-content/uploads/2020/01/Empanadas-de-jamon-y-queso-300x300.jpg',
+    }
+   
 ]
 
 
