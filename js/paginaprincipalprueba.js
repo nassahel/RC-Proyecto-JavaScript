@@ -225,8 +225,11 @@ const bebidas=[
     {name:'Agua Mineral',
      price: 400,
      url:'https://blogautoservicios.com.ar/wp-content/uploads/2023/04/7790315000422_536-7.jpg',
+    },
+    {name:'Cerveza Quilmes',
+     price: 700,
+     url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrVXyPS5zCxuNgSQneFSpZek0whs9ZGHFV1g&usqp=CAU',
     }
-
 ]
 
 const bebidaSection = document.querySelector('#bebidas');
