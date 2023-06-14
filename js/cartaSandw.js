@@ -1,3 +1,11 @@
+let prodSand = JSON.parse(localStorage.getItem("carrito"))
+
+if (prodSand === null) {
+    prodSand = sandwichs;
+    localStorage.setItem("car", JSON.stringify(prodSand))
+
+}
+
 
 let carrito = []
 
