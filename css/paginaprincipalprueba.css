@@ -22,7 +22,6 @@
 
 
 
-
 :root {
     --yale-blue-boton: rgb(59, 137, 211);
     --naranja-categoria: #ee964bff;
@@ -73,6 +72,7 @@ body {
     flex-direction: column;
     /* background-color: var(--naples-yellow); */
     background: var(--dregradado);
+   
 }
 footer {
     margin-top: auto;
@@ -113,19 +113,20 @@ footer {
 }
 
 .card{
-    background: rgb(232, 216, 227);
+    background: rgb(236, 14, 166);
     max-width: 200px;
-    height: 200px;
+    height: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    object-fit: cover;
 }
 .card img{
-    margin: 30px;
-    max-width: 100px;
-    height: 100px;
+    margin: 50px;
+    max-width: 200px;
+    height: 200px;
 }
 .products2{
     display: flex;

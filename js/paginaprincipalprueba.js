@@ -1,4 +1,5 @@
 
+
 /// LO MAS BUSCADO //
 const lomasbuscado= [
     {name: 'Pizza Napolitana',
@@ -7,9 +8,6 @@ const lomasbuscado= [
     {name:'Empanadas de ternera',
      price: 2000,
      url:'https://tiendadeempanadas.com.ar/wp-content/uploads/2020/07/POLlO-300x300.jpg'},
-    {name:'Sandwich de milanesa',
-     price: 1500,
-     url:'https://www.shutterstock.com/image-photo/sandwich-de-milanesa-con-huevo-260nw-2178793257.jpg'},
     {name:'Coca cola 2lts',
      price: 850,
      url:'https://trajineras.com/wp-content/uploads/2020/02/cocacola_2.5lts.png'},
@@ -17,11 +15,6 @@ const lomasbuscado= [
      price: 700,
      url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrVXyPS5zCxuNgSQneFSpZek0whs9ZGHFV1g&usqp=CAU',
      },
-     {name:'Empanada de jamon y queso',
-     price: 250,
-     url:'https://www.cucinare.tv/wp-content/uploads/2020/01/Empanadas-de-jamon-y-queso-300x300.jpg',
-    }
-   
 ]
 
 
@@ -49,18 +42,12 @@ const pizzas= [
     {name:'Pizza de muzzarella',
      price: 2300,
      url: 'https://avantipizzas.com.ar/wp-content/uploads/2022/04/roquefort-pizzas-avanti-300x300.jpg'},
-    {name:'Pizza especial',
-     price: 2500,
-     url: 'https://avantipizzas.com.ar/wp-content/uploads/2022/04/napolitana-con-albahaca-pizzas-avanti-300x300.jpg'},
     {name:'PIzza de Calabresa',
      price: 2500,
      url: 'https://avantipizzas.com.ar/wp-content/uploads/2022/04/calabressa-pizzas-avanti-300x300.jpg'},
-     {name:'Pizza de Fugazzeta',
-      price: 2300,
-      url:'https://maxipasta.com.ar/wp-content/uploads/2022/05/fugazzeta-rellena-1-300x300.jpg'},
-      {name:'Pizza de ternera',
-       price: 2300,
-       url:'https://st4.depositphotos.com/1000605/21101/i/450/depositphotos_211012608-stock-photo-pizza-with-minced-meat-and.jpg'},
+    {name:'Pizza de Fugazzeta',
+     price: 2300,
+     url:'https://maxipasta.com.ar/wp-content/uploads/2022/05/fugazzeta-rellena-1-300x300.jpg'},
 ]
 
 const pizzaSection = document.querySelector('#pizzas');
@@ -82,10 +69,6 @@ pizzas.forEach(function (Pizza) {
 /// MINUTAS ////
 
 const minutas=[ 
-    {name:'Milanesa rellena con fritas',
-     price: 2000,
-     url:'https://www.cucinare.tv/wp-content/uploads/2018/12/Milanesa-rellena-frita-300x300.jpg',
-    },
     {name:'Pechuga c/guarnicion',
     price: 2100,
     url: 'https://chefmiralles.files.wordpress.com/2014/02/pollomanzana-7.jpg?w=300&h=300',
@@ -102,10 +85,6 @@ const minutas=[
     price: 2500,
     url:'https://img-global.cpcdn.com/recipes/d974bacedda743ae/400x400cq70/photo.jpg',
     },
-    {name:'Pata muslo con guarnicion',
-    price: 2100,
-    url:'https://comersanoviandas.com/wp-content/uploads/2021/04/Pata-muslo-al-horno-con-verduras-asadas-1.jpg',}
-
 ]
 const minutaSection = document.querySelector('#minutas');
 
@@ -134,17 +113,9 @@ const empanadas=[
      price: 240,
      url:'https://www.domenico.es/wp-content/uploads/2022/12/DSC07161-scaled-e1671539130174-300x300.jpg',
     },
-    {name:'Empanada de mondongo',
-     price: 230,
-     url:'https://d1kxxrc2vqy8oa.cloudfront.net/wp-content/uploads/2020/06/03211316/RIG-0705-4-empanadademondongo-petitechefcom-300x300.jpg',
-    },
     {name:'Empanada de capresse',
      price: 250,
      url:'https://www.deliciosi.com/images/100/134/empanadas-caprese.jpg',
-    },
-    {name:'Empanada de jamon y queso',
-     price: 250,
-     url:'https://www.cucinare.tv/wp-content/uploads/2020/01/Empanadas-de-jamon-y-queso-300x300.jpg',
     },
     {name:'Sfijas',
     price: 240,
@@ -176,10 +147,6 @@ const sandwiches= [
      price: 1500,
      url:'https://www.shutterstock.com/image-photo/sandwich-de-milanesa-con-huevo-260nw-2178793257.jpg'
     },
-    {name:'Sandwich de Milanesa especial',
-     price: 1700,
-     url:'https://www.laalemanacomidas.com.ar/wp-content/uploads/2020/04/180786-a3dd8eb3-b0db-4b1d-bf9f-83c55bc38593-1531908931.png',
-    },
     {name:'Sandwich de Ternera',
     price: 1500,
     url:'https://img-global.cpcdn.com/recipes/9efa1e15484d1a5d/400x400cq70/photo.jpg',
@@ -192,11 +159,6 @@ const sandwiches= [
     price: 1400,
     url:'https://www.baarty.com/articulos/wp-content/uploads/2022/07/proveedor-pan-hamburguesas.jpg',
     },
-    {name:'Hamburguesa especial',
-     price: 1600,
-     url:'https://ilfornodirita.pedidosonline.uy/wp-content/uploads/2022/02/hamburguesa-completa-300x300.jpg',
-    },
-
 ]
 const sandwichwsection = document.querySelector('#sandwiches');
 
@@ -224,14 +186,6 @@ const bebidas=[
      price: 500,
      url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9-ifDmZIa7bGnTadszbb2R6-NnXcJ4XAyAgT0iDBHwByNxjTtUr8kxRqqEEDKHmZvG2w&usqp=CAU',
     },
-    {name:'Fanta 2lts',
-     price: 500,
-     url:'https://www.hiperlibertad.com.ar/arquivos/ids/210161-300-300/Gaseosa-Fanta-Naranja-1-5-Lt-2-2552.jpg?v=638210685975330000',
-    },
-    {name:'Secco 2lts',
-     price: 450,
-     url:'https://www.delimart.com.ar/user-content/d51d4e57-f106-46ad-ac0b-672523d7bd97.jpg',
-    },
     {name:'Agua Mineral',
      price: 400,
      url:'https://blogautoservicios.com.ar/wp-content/uploads/2023/04/7790315000422_536-7.jpg',
@@ -257,4 +211,10 @@ bebidas.forEach(function (Bebidas) {
     card.innerHTML = item;
     bebidaSection.appendChild(card);
     
+})
+const myModal = document.getElementById('myModal')
+const myInput = document.getElementById('myInput')
+
+myModal.addEventListener('shown.bs.modal', () => {
+  myInput.focus()
 })
