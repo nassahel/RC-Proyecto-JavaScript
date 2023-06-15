@@ -113,7 +113,7 @@ footer {
 }
 
 .card{
-    background: rgb(236, 14, 166);
+    background: rgb(15, 15, 15);
     max-width: 200px;
     height: 100px;
     display: flex;
@@ -121,12 +121,14 @@ footer {
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
-    object-fit: cover;
+    border-style: solid;
+    border-width: 3px;
+    
 }
 .card img{
     margin: 50px;
     max-width: 200px;
-
+    
 }
 .products2{
     display: flex;
@@ -140,6 +142,7 @@ footer {
 #pizzas {
     display: flex;
     gap: 2rem;
+    
 }
 .products3{
     display: flex;
@@ -149,6 +152,7 @@ footer {
     width: 100%;
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
     gap: 2rem;
+    
 }
 #minutas {
     display: flex;
