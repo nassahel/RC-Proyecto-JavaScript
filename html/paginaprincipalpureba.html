@@ -9,6 +9,27 @@
   <title>Document</title>
 </head>
 <body>
+   <!-----------------------INICIO DEL MODAL-------------------->
+   <div class="modal fade" tabindex="-1" id="modal-carrito">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Carrito de compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modalBody">
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Realizar Compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-----------------------FIN DEL MODAL-------------------->
   <!--INICIO DEL NAV-->
   <nav class="navbar navbar-expand-lg mb-4 shadow sticky-top">
     <div class="container-fluid">
@@ -50,30 +71,6 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" href="#">
-              <!-- Button trigger modal -->
-<button  class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-  <img class="logo-carrito" src="../img/carrito-blanco.png" alt="imagen de carrito" data-bs-toggle="modal"
-  data-bs-target="#modal-carrito">
-</button>
-
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
-</div>
               <img class="logo-carrito" src="../img/carrito-blanco.png" alt="imagen de carrito" data-bs-toggle="modal"
                 data-bs-target="#modal-carrito">
             </a>
