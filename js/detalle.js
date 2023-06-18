@@ -1,11 +1,7 @@
-let carrito = []
+let carritoCompras = JSON.parse(localStorage.getItem("carrito")) || [];
 
-let productos = JSON.parse(localStorage.getItem("carritox"));
 
-if(productos === null) {
-    productos = sandwichs;
-    localStorage.setItem("carritox", JSON.stringify(productos))
-}
+
 
 function crearTarjeta(arrayProductos, seccion) {
     arrayProductos.forEach(producto => {
@@ -36,3 +32,11 @@ function renderTarjeta() {
 }
 
 renderTarjeta()
+
+
+function contCarr () {
+    let contador = document.querySelector("#contadorCarrito");
+    contador.innerText = carrito.length 
+}
+
+contCarr()

@@ -77,3 +77,21 @@ footer {
     height: 13rem;
     object-fit: cover;
 }
+
+.contador-carrito {
+    background-color: red;
+    color: white;
+    padding: 0rem 0.4rem 0.1rem 0.4rem ;
+    border-radius: 50%;
+}
+
+.prod-carrit {
+    background: var(--dregradado);
+    /* color: white; */
+}
+
+
+.prod-carrit img {
+    border-radius: 10px !important;
+    overflow: hidden;
+}
