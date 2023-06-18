@@ -55,6 +55,7 @@ footer {
 
 .btn-buscar {
     background: var(--dregradado);
+    color: black;
 }
 
 
@@ -86,12 +87,30 @@ footer {
 }
 
 .prod-carrit {
-    background: var(--dregradado);
+    background: var(--naranja-categoria);
     /* color: white; */
+    /* max-height: 7rem ; */
 }
 
 
-.prod-carrit img {
-    border-radius: 10px !important;
-    overflow: hidden;
+p {
+    margin: 0;
 }
+
+.form-control {
+    background-color: white;
+}
+
+.total-div {
+    background-color: var(--moradito);
+}
+
+.eliminar-producto {
+    background-color: var(--moradito);
+    color: white;
+    text-align: center;
+    padding: 0.4rem 0;
+    border-radius: 50%;
+    cursor: pointer;
+}
+

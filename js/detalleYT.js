@@ -1,6 +1,7 @@
 let sandwichBox = document.getElementById("sandwich-box");
 let verCarrito = document.getElementById("ver-carrito")
 let modalBody = document.getElementById("modalBody")
+let totalCompra = document.getElementById("total");
 
 let carrito = [];
 
@@ -13,7 +14,7 @@ sandwichs.forEach((producto) => {
         <div class="col col-12 col-lg-6">
             <h2>${producto.Nombre}</h2> 
             <h2>$${producto.Precio}</h2>  
-            <p>${producto.Descripcion}</p>  
+            <h6>${producto.Descripcion}</h6>  
             <p>#${producto.ID}</p>
         </div>
     
@@ -45,22 +46,42 @@ sandwichs.forEach((producto) => {
 });
 
 
-
+const eliminarProducto = (id) => {
+    carrito = carrito.filter((producto) => producto.id !== id);
+  };
 
 verCarrito.addEventListener("click", () => {
+    modalBody.innerHTML = "";
     carrito.forEach((producto) => {
         let carritoContent = document.createElement("div")
-        carritoContent.className = "prod-carrit row mx-2 rounded py-2 mb-2";
+        carritoContent.className = "prod-carrit row mx-2 shadow d-flex align-items-center py-2 mb-2";
         carritoContent.innerHTML = `
-       <img class="col-4" src=${producto.imagen}> 
+       <img class="col-4" id="imgcar"  src=${producto.imagen}> 
        <div class="col col-6">
-            <h5>${producto.nombre}</h5>             
+            <h6>${producto.nombre}</h6>             
+            <h6>$${producto.precio}</h6> 
             <p>#${producto.id}</p>
        </div>
-        <div class="col col-2">
-            <h5>$${producto.precio}</h5> 
-        </div>   
+        
         `;
         modalBody.append(carritoContent)
+
+        let eliminar = document.createElement("span");
+        eliminar.innerText = "X"
+        eliminar.className = "eliminar-producto col col-1"
+        carritoContent.append(eliminar);
+
+        eliminar.addEventListener("click", () => {
+            eliminarProducto(producto.id);
+            carritoContent.remove();
+            const total = carrito.reduce((acc, el) => acc + el.precio, 0);
+            totalCompra.innerText = total;
+          });
     })
+
+    const total = carrito.reduce((acc, el) => acc + el.precio, 0);
+
+    totalCompra.innerText = total;
 })
+
+
