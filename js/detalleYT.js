@@ -4,7 +4,7 @@ let modalBody = document.getElementById("modalBody")
 let totalCompra = document.getElementById("total");
 let contCarrito = document.getElementById("contadorCarrito")
 
-let carrito = [];
+let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 sandwichs.forEach((producto) => {
     let item = document.createElement("section");
@@ -43,6 +43,7 @@ sandwichs.forEach((producto) => {
         });
         console.log(carrito);
         carritoCont();
+        guardarLocal();
     });
 
 });
@@ -51,6 +52,7 @@ sandwichs.forEach((producto) => {
 const eliminarProducto = (id) => {
     carrito = carrito.filter((producto) => producto.id !== id);
     carritoCont();
+    guardarLocal();
   };
 
 verCarrito.addEventListener("click", () => {
@@ -89,12 +91,21 @@ verCarrito.addEventListener("click", () => {
 
 
 function carritoCont() {
-            contCarrito.style.display = "block";
-    contCarrito.innerText = carrito.length;
-//     if (carrito.length === 0) {
-//         contCarrito.style.display = "none";
-//     } else {
+    if (carrito.length === 0) {
+        contCarrito.style.display = "none";
+    } else {
+        contCarrito.style.display = "block";
+    }
 
-//     }
+    const carritoLargo = carrito.length;
+
+    localStorage.setItem("carritoLargo", JSON.stringify(carritoLargo))
+    contCarrito.innerText = JSON.parse(localStorage.getItem("carritoLargo"))
  }
     
+function guardarLocal() {
+    localStorage.setItem("carrito", JSON.stringify(carrito));
+}
+
+
+carritoCont();
