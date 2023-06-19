@@ -81,6 +81,7 @@ verCarrito.addEventListener("click", () => {
             carritoContent.remove();
             const total = carrito.reduce((acc, el) => acc + el.precio, 0);
             totalCompra.innerText = total;
+            
           });
     })
 

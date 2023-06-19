@@ -29,6 +29,7 @@
 
 let btnGuardar = document.getElementById('agregarGuardar');
 btnGuardar.addEventListener('click', agregarProductos);
+let borrarProd = document.querySelector(".borrar-producto");
 
 let productos = [];
 
@@ -44,8 +45,7 @@ function agregarProductos() {
         nombre: txtNombre,
         precio: txtPrecio,
         descripcion: txtDescripcion,
-        id: txtId,
-        check: false
+        id: txtId
 
     })
 
@@ -61,19 +61,40 @@ function agregarProductos() {
         <td>$${txtPrecio}</td>
         <td>${txtDescripcion}</td>
         <td>#${txtId}</td>
+        <th><button type="button" class="btn editar-producto btn-secondary btn-sm mb-1">Editar</button>
+        <button type="button" class="btn borrar-producto btn-danger btn-sm mb-1">Borrar</button></th>
         `
         tableBody.append(agregarFila);
     });
 }
 
 
+borrarProd.addEventListener("click", borrarFila)
+
+productos.forEach((prod) => {
 
 
-function borrarproducto () {
-productos.filter(function(product) {
-    let checkB = document.getElementById("check-d").checked;
-    product.check.checked;
+    function borrarFila(id) {
+        let nuevosProductos = productos.filter(function (produ) {
+            return produ.id !== id;
+        })
+        productos = [...nuevosProductos]
+    }
 
-})    
-}
+    borrarFila(prod.id)
 
+})
+
+
+
+
+// onclick="deletebook(${book.isbn})"
+
+
+// let validar = cofrim("desea eliminar el libro?")
+// if(validar) {
+//     let newBooks = books.filter((book) =>{
+//         return book.isbn !== isbn;
+//     });
+//     books=[...newBooks]
+// }
