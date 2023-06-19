@@ -124,3 +124,17 @@ p {
     cursor: pointer;
 }
 
+
+
+/* ------------------------ADMINISTRACION-------------------------- */
+
+
+.borrar-fila {
+    text-align: center;
+    background-color: red;
+    width: 2rem;
+    border-radius: 50%;
+    padding-bottom: 5px;
+    cursor: pointer;
+
+}
