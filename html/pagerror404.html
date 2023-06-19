@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <link rel="stylesheet" href="../css/pagerror404.css">
-    <title>Rolling Delivery</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="../css/pagerror404.css">
+  <title>Rolling Delivery</title>
 </head>
+
 <body>
-      <!-----------------------INICIO DEL NAV------------------->
-  <nav class="navbar navbar-expand-lg mb-4 shadow sticky-top">
+  <!-----------------------INICIO DEL MODAL-------------------->
+  <div class="modal fade" tabindex="-1" id="modal-carrito">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Carrito de compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body" id="modalBody">
+        </div>
+        <div class="text-center total-div text-white py-2 h6">Total: $ <span id="total"></span></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Realizar Compra</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!-----------------------FIN DEL MODAL-------------------->
+
+
+
+
+
+  <!-----------------------INICIO DEL NAV-------------------->
+  <nav class="navbar navbar-expand-lg mb-4 shadow sticky-top" data-bs-theme="dark">
     <div class="container-fluid">
       <a class="navbar-brand" href="#">
         <img class="img" src="../img/logo-transparent-BLANCO.png" alt="Logo" style="width: 100px;">
@@ -49,43 +79,36 @@
         <ul class="navbar-nav">
           <li class="nav-item">
             <a class="nav-link active" href="#">
-              <img class="logo-carrito" src="../img/carrito-blanco.png" alt="imagen de carrito" data-bs-toggle="modal"
-                data-bs-target="#modal-carrito">
+              <img id="ver-carrito" class="logo-carrito" src="../img/carrito-blanco.png" alt="imagen de carrito"
+                data-bs-toggle="modal" data-bs-target="#modal-carrito"> <span id="contadorCarrito"
+                class="contador-carrito">0</span>
             </a>
           </li>
         </ul>
         <form class="d-flex d-lg-none mt-2">
           <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-          <button class="btn btn-outline-success" type="submit">Search</button>
+          <button class="btn btn-buscar" type="submit">Buscar</button>
         </form>
       </div>
     </div>
   </nav>
-  <!-----------------fin del nav--------------->
-    <section class="error-message">
-        <section class="error-message__container">
-            <h1 class="animated bounce"> 404</h1>
-            <p>Pagina no encontrada</p>
-        </section>
+  <!-----------------------FIN DEL NAV-------------------->
+
+
+  <!-----------------BODY--------------->
+
+
+  <section class="error-message">
+    <section class="error-message__container">
+      <h1 class="animated bounce"> 404</h1>
+      <p>Pagina no encontrada</p>
     </section>
-    
+    <a class="btn btn-sm btn-outline-light" href="/index" role="button">Volver</a>
+  </section>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--Inicio de footer-->
-<footer class="container-fluid p-3">
+  <!-----------------------INICIO DEL FOOTER-------------------->
+  <footer class="container-fluid p-3">
     <section class="row d-flex align-items-center justify-content-between text-center text-white">
       <section class="redesSociales col-sm-11 col-lg-4 mb-1">
         <a href="#"><img src="../img/instagram.png" alt=""></a>
@@ -98,9 +121,18 @@
       <section class="col-sm-11 col-lg-4 mb-1">
         <a href="#" class="text-decoration-none text-white">Acerca de nosotros</a>
       </section>
+
     </section>
+
   </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  <!-----------------------FIN DEL FOOTER-------------------->
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
 
 </body>
+
 </html>
