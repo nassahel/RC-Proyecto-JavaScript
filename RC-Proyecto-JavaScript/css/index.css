@@ -1,0 +1,36 @@
+.pagprincipal{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+
+}
+
+.navbar{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+.img-thumbnail{
+    width: 100px;
+}
+.imagenes{
+    display: flex;
+    margin: 15px;
+}
+.card{
+    margin-right: 10px;
+    margin:auto;
+    margin-left: auto;
+    padding: auto;
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+.fondo{
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+}
+.formu {
+    max-width: 15rem;
+}
+
+
+.redesSociales img {
+    width: 4vh;
+    margin: 0 0.2vh;
+}
