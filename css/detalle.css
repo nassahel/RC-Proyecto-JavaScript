@@ -15,7 +15,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* background-color: var(--naples-yellow); */
     background: var(--dregradado);
 }
 
@@ -98,8 +97,6 @@ footer {
 
 .prod-carrit {
     background: var(--naranja-categoria);
-    /* color: white; */
-    /* max-height: 7rem ; */
 }
 
 
@@ -124,3 +121,18 @@ p {
     cursor: pointer;
 }
 
+
+
+/* ------------------------ADMINISTRACION-------------------------- */
+
+
+.borrar-fila {
+    text-align: center;
+    background-color: var(--moradito);
+    width: 2rem;
+    border-radius: 50%;
+    padding-bottom: 5px;
+    cursor: pointer;
+    color: white;
+
+}

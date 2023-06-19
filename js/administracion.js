@@ -56,8 +56,6 @@ function agregarProductos() {
         let agregarFila = document.createElement('tr')
         agregarFila.id = 'new-tr';
         agregarFila.innerHTML = `
-        <td><input type="checkbox" name="" id="check-d""></td>
-        
         <td>${txtCategoria}</td>
         <td>${txtNombre}</td>
         <td>$${txtPrecio}</td>
