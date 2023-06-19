@@ -1,3 +1,11 @@
+// const search = document.querySelector('#search');
+// const form = document.querySelector('#form');
+
+// form.addEventListener('submit', function(event){
+//     event.preventDefault();
+//     console.log(search.name);
+// })
+
 
 
 /// LO MAS BUSCADO //
@@ -20,6 +28,15 @@ const lomasbuscado= [
 
 const buscadoSection = document.querySelector('#lomasbuscado');
 
+let countCard = 0;
+
+function addCard() {
+    const itemsCard = document.querySelector('#modalBody');
+
+    countCard =  countCard + 1
+    itemsCard.innerText = countCard
+}
+
 lomasbuscado.forEach(function (buscado) {
     let card = document.createElement('div');
     card.classList.add('card')
@@ -27,7 +44,7 @@ lomasbuscado.forEach(function (buscado) {
     let item =`
     <img src=${buscado.url} alt=${buscado.name}/>
     <p>${buscado.name}</p>
-    <button type="submit">${buscado.price}</button>
+    <button type="submit" onclick="addCard()">${buscado.price}</button>
     `;
     
     card.innerHTML = item;
@@ -52,6 +69,14 @@ const pizzas= [
 
 const pizzaSection = document.querySelector('#pizzas');
 
+
+function addCard() {
+    const itemsCard = document.querySelector('#modalBody');
+
+    countCard =  countCard + 1
+    itemsCard.innerText = countCard
+}
+
 pizzas.forEach(function (Pizza) {
     let card = document.createElement('div');
     card.classList.add('card')
@@ -59,7 +84,7 @@ pizzas.forEach(function (Pizza) {
     let item = ` 
     <img src=${Pizza.url} alt=${Pizza.name}/>
     <p>${Pizza.name}</p>
-    <button type="submit">${Pizza.price}</button>
+    <button type="submit" onclick="addCard()">${Pizza.price}</button>
     `;
 
     card.innerHTML = item;
@@ -88,6 +113,14 @@ const minutas=[
 ]
 const minutaSection = document.querySelector('#minutas');
 
+
+function addCard() {
+    const itemsCard = document.querySelector('#modalBody');
+
+    countCard =  countCard + 1
+    itemsCard.innerText = countCard
+}
+
 minutas.forEach(function (Minutas) {
     let card = document.createElement('div');
     card.classList.add('card')
@@ -95,7 +128,7 @@ minutas.forEach(function (Minutas) {
     let item = ` 
     <img src=${Minutas.url} alt=${Minutas.name}/>
     <p>${Minutas.name}</p>
-    <button type="submit">${Minutas.price}</button>
+    <button type="submit" onclick="addCard()">${Minutas.price}</button>
     `;
 
     card.innerHTML = item;
@@ -126,6 +159,13 @@ const empanadas=[
 ]
 const empanadaSection = document.querySelector('#empanadas');
 
+function addCard() {
+    const itemsCard = document.querySelector('#modalBody');
+
+    countCard =  countCard + 1
+    itemsCard.innerText = countCard
+}
+
 empanadas.forEach(function (Empanadas) {
     let card = document.createElement('div');
     card.classList.add('card')
@@ -133,7 +173,7 @@ empanadas.forEach(function (Empanadas) {
     let item = ` 
     <img src=${Empanadas.url} alt=${Empanadas.name}/>
     <p>${Empanadas.name}</p>
-    <button type="submit">${Empanadas.price}</button>
+    <button type="submit" onclick="addCard()">${Empanadas.price}</button>
     `;
 
     card.innerHTML = item;
@@ -162,6 +202,13 @@ const sandwiches= [
 ]
 const sandwichwsection = document.querySelector('#sandwiches');
 
+function addCard() {
+    const itemsCard = document.querySelector('#modalBody');
+
+    countCard =  countCard + 1
+    itemsCard.innerText = countCard
+}
+
 sandwiches.forEach(function (Sandiwiches) {
     let card = document.createElement('div');
     card.classList.add('card')
@@ -169,7 +216,7 @@ sandwiches.forEach(function (Sandiwiches) {
     let item = ` 
     <img src=${Sandiwiches.url} alt=${Sandiwiches.name}/>
     <p>${Sandiwiches.name}</p>
-    <button type="submit">${Sandiwiches.price}</button>
+    <button type="submit" onclick="addCard()">${Sandiwiches.price}</button>
     `;
 
     card.innerHTML = item;
@@ -198,6 +245,13 @@ const bebidas=[
 
 const bebidaSection = document.querySelector('#bebidas');
 
+function addCard() {
+    const itemsCard = document.querySelector('#modalBody');
+
+    countCard =  countCard + 1
+    itemsCard.innerText = countCard
+}
+
 bebidas.forEach(function (Bebidas) {
     let card = document.createElement('div');
     card.classList.add('card')
@@ -205,10 +259,13 @@ bebidas.forEach(function (Bebidas) {
     let item = ` 
     <img src=${Bebidas.url} alt=${Bebidas.name}/>
     <p>${Bebidas.name}</p>
-    <button type="submit">${Bebidas.price}</button>
+    <button type="submit" onclick="addCard()" >${Bebidas.price}</button>
     `;
 
     card.innerHTML = item;
     bebidaSection.appendChild(card);
     
 })
+
+
+/*---------------------------------*/
