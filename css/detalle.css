@@ -131,10 +131,11 @@ p {
 
 .borrar-fila {
     text-align: center;
-    background-color: red;
+    background-color: var(--moradito);
     width: 2rem;
     border-radius: 50%;
     padding-bottom: 5px;
     cursor: pointer;
+    color: white;
 
 }
