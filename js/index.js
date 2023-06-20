@@ -269,3 +269,35 @@ bebidas.forEach(function (Bebidas) {
 
 
 /*---------------------------------*/
+
+
+const search = document.querySelector('#search');
+const btnSearch = document.querySelector('#btn-search');
+const searchProduct = document.querySelector('#search-product');
+const form = document.querySelector('.d');
+
+form.addEventListener('submit', function (event) {
+    searchProduct.innerHTML = ''
+    event.preventDefault();
+    
+    
+    let pizzaSection = pizzas.find(function (Pizza) {
+        if(Pizza.name === search.value) return Pizza;
+    
+    });
+    if(pizzaSection !== undefined) {
+        searchProduct.innerHTML = `<h3> PRODUCTO ENCONTRADO </h3>`;
+        let item = ` 
+        <div class=card> 
+        <img src=${pizzaSection.url} alt=${pizzaSection.name}/>
+        <p>${pizzaSection.name}</p>
+        <p>${pizzaSection.price}</p>
+        </div>
+    `;
+    searchProduct.innerHTML += item;
+    }
+
+       
+        
+    
+});

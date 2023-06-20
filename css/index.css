@@ -1,30 +1,90 @@
-.pagprincipal{
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-
-}
-
-.navbar{
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-}
-.img-thumbnail{
-    width: 100px;
-}
-.imagenes{
+.animated-word{
     display: flex;
-    margin: 15px;
+    align-items: center;
+    justify-content: center;
 }
-.card{
-    margin-right: 10px;
-    margin:auto;
-    margin-left: auto;
-    padding: auto;
-    display: block;
-    max-width: 100%;
-    height: auto;
+.letter{
+    transition: 2.9s;
+    transform: translateX(0);
+    cursor: grab;
+    color: #0d0d0e;
 }
-.fondo{
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+.letter:hover{
+    transform: translateY(-10rem);
+    background: -webkit-linear-gradient(120deg,hsl(19, 90%, 52%), hsl(56, 100% 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
+
+
+
+
+
+
+
+:root {
+    --yale-blue-boton: rgb(59, 137, 211);
+    --naranja-categoria: #ee964bff;
+    --celeste-hover: rgb(226, 214, 240);
+    --dregradado: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    --moradito: rgb(27, 2, 44);
+    --boton-hover: rgb(24, 101, 173);
+    --boton-active: rgb(31, 127, 216);
+    /* texto de boton: blanco */
+    /* las tarjetas o secciones van con sombra */
+}
+
+.navbar {
+    background-color: rgb(27, 2, 44);
+}
+
+.categoria {
+    background-color: #F95738;
+}
+
+.product,
+.dropdown-menu {
+    background-color: white;
+}
+
+.btn-pedido {
+    background-color: var(--yale-blue-boton);
+    color: whitesmoke;
+}
+
+.btn-pedido:hover {
+    background-color: rgb(24, 101, 173);
+    color: whitesmoke;
+}
+
+.btn-pedido:active {
+    background-color: rgb(31, 127, 216) !important;
+    color: whitesmoke !important;
+}
+
+.btn-buscar {
+    background: var(--dregradado);
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /* background-color: var(--naples-yellow); */
+    background: var(--dregradado);
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+footer {
+    margin-top: auto;
+    background: var(--moradito);
+}
+
+.logo-carrito {
+    width: 50px;
+}
+
 .formu {
     max-width: 15rem;
 }
@@ -33,4 +93,112 @@
 .redesSociales img {
     width: 4vh;
     margin: 0 0.2vh;
+}
+
+.submit{
+    align-items: center;
+    text-align: center;
+}
+
+.products1 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    gap: 2rem;
+    
+}
+#lomasbuscado {
+    display: flex;
+    gap: 2rem;
+    
+}
+
+.card{
+    background: rgb(15, 15, 15);
+    max-width: 200px;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    
+    
+}
+.card img{
+    margin: 50px;
+    max-width: 200px;
+    border-radius: 5px;
+    
+}
+    
+.products2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    gap: 2rem;
+}
+#pizzas {
+    display: flex;
+    gap: 2rem;
+    
+}
+.products3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    gap: 2rem;
+    
+}
+#minutas {
+    display: flex;
+    gap: 2rem;
+}
+.products4{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    gap: 2rem;
+}
+#empanadas {
+    display: flex;
+    gap: 2rem;
+}
+.products5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    gap: 2rem;
+}
+#sandwiches {
+    display: flex;
+    gap: 2rem;
+}
+.products6{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    gap: 2rem;
+}
+#bebidas {
+    display: flex;
+    gap: 2rem;
 }
