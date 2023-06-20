@@ -65,18 +65,21 @@ footer {
     width: 4vh;
     margin: 0 0.2vh;
 }
-
 .submit{
-    align-items: center;
     text-align: center;
+    align-items: center;
 }
+
 
 .buscador{
-    align-items: center;
+    align-items: right;
     text-align: center;
     
+    
 }
-
+#search{
+    width: 500px;
+}
 /*--------------------------------------------------------- TARJETA--------------------------------------*/
 .card{
     background: rgb(15, 15, 15);

@@ -1,16 +1,16 @@
 ///---------------------------------------------------------------------- PIZZAS------------------------------------------------------- ////
 
 const pizzas= [
-    {name:'Pizza Napolitana',
+    {name:'Pizza napolitana',
      price: '$2350',
      url: 'https://avantipizzas.com.ar/wp-content/uploads/2022/04/napolitana-con-albahaca-pizzas-avanti-300x300.jpg'},
     {name:'Pizza de muzzarella',
      price: '$2300',
      url: 'https://avantipizzas.com.ar/wp-content/uploads/2022/04/roquefort-pizzas-avanti-300x300.jpg'},
-    {name:'Pizza de Calabresa',
+    {name:'Pizza de calabresa',
      price: '$2500',
      url: 'https://avantipizzas.com.ar/wp-content/uploads/2022/04/calabressa-pizzas-avanti-300x300.jpg'},
-    {name:'Pizza de Fugazzeta',
+    {name:'Pizza de fugazzeta',
      price: '$2300',
      url:'https://maxipasta.com.ar/wp-content/uploads/2022/05/fugazzeta-rellena-1-300x300.jpg'},
 ]
@@ -44,19 +44,19 @@ pizzas.forEach(function (Pizza) {
 const minutas=[ 
     {name:'Pechuga c/guarnicion',
     price: '$2100',
-    url: 'https://chefmiralles.files.wordpress.com/2014/02/pollomanzana-7.jpg?w=300&h=300',
+    url: 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRw5PXmmXxlfpF9JPgggPnGF7hDCZa0SNgraZuDUKCYmFohrpFuzikVfB1IxF0MCzZQLRc&usqp=CAU',
     },
     {name:'Bife de lomo',
     price: '$1600',
-    url:'https://dlvry-tkout.com/wp-content/uploads/2022/04/3295-300x300.jpg',
+    url:'https://cdn.pixabay.com/photo/2015/05/29/04/08/strip-loin-steak-788873_1280.jpg',
     },
     {name:'Kipe relleno',
     price: '$2300',
-    url:'https://www.cucinare.tv/wp-content/uploads/2019/09/Keppe-300x300.jpg',
+    url:'https://www.shutterstock.com/image-photo/roasted-kibe-brazilian-snack-on-260nw-1919900744.jpg',
     },
     {name:'Matambre al verdeo',
     price: '$2500',
-    url:'https://img-global.cpcdn.com/recipes/d974bacedda743ae/400x400cq70/photo.jpg',
+    url:'https://media-cdn.tripadvisor.com/media/photo-s/1c/c0/e9/ff/matambre-tiernizado-al.jpg',
     },
 ]
 const minutaSection = document.querySelector('#minutas');
@@ -86,21 +86,21 @@ minutas.forEach(function (Minutas) {
 ///---------------------------------------------------------------------- EMPANADASSS------------------------------------------------ ////
 
 const empanadas=[
-    {name:'Empanada de carne',
+    {name:'Empanada de jamon y queso',
      price: '$240',
-     url:'https://sp-ao.shortpixel.ai/client/to_webp,q_lossless,ret_img,w_250,h_250/https://www.recetasjudias.com/wp-content/uploads/2017/06/Empanadas-Argentinas-300x300.jpg',
+     url:'https://tiendadeempanadas.com.ar/wp-content/uploads/2020/07/JyQ-300x300.jpg',
     },
     {name: 'Empanada de pollo',
      price: '$240',
-     url:'https://www.domenico.es/wp-content/uploads/2022/12/DSC07161-scaled-e1671539130174-300x300.jpg',
+     url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSNdl0R8_2gYcI1gb6u2tANwGuAGRpUxR3GYg&usqp=CAU',
     },
     {name:'Empanada de capresse',
      price: '$250',
-     url:'https://www.deliciosi.com/images/100/134/empanadas-caprese.jpg',
+     url:'https://i0.wp.com/empanadaspr.com/wp-content/uploads/2023/04/cerdo2.png?resize=300%2C300&ssl=1',
     },
-    {name:'Sfijas',
+    {name:'Empanadas de carne',
     price: '$240',
-    url:'https://arabianshawarma.com.ar/wp-content/uploads/2021/11/sfijas--300x300.jpg',
+    url:'https://tiendadeempanadas.com.ar/wp-content/uploads/2020/07/POLlO-300x300.jpg',
     }
 
 
@@ -133,19 +133,19 @@ empanadas.forEach(function (Empanadas) {
 const sandwiches= [
     {name:'Sandwich de Milanesa',
      price: '$1500',
-     url:'https://www.shutterstock.com/image-photo/sandwich-de-milanesa-con-huevo-260nw-2178793257.jpg'
+     url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThnH6SJXFa6EZ4-MM_i8Quq8dqUP9Jenv1swmcxHf8Vv4wJVQWnlX5CT4flmDTXOEmn10&usqp=CAU'
     },
     {name:'Sandwich de Ternera',
     price: '$1500',
-    url:'https://img-global.cpcdn.com/recipes/9efa1e15484d1a5d/400x400cq70/photo.jpg',
+    url:'https://www.juliana-delivery.com.ar/uploads/products/detail_products_6117.png',
     },
     {name:'Sandwich de Lomito',
     price: '$1600',
-    url:'https://cdn.shopify.com/s/files/1/0596/4313/4144/products/image_a2c57cce-32d6-46b0-aeef-933d3272cb07.jpg?v=1649356971',
+    url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSVPmPnLFHG0utRui8sVvDJVyeqNhe7gBrDjv5QEOLuLaIiNUi0aMkic2mrNkC2eVd3ymg&usqp=CAU',
     },
     {name:'Hamburguesa comun',
     price: '$1400',
-    url:'https://www.baarty.com/articulos/wp-content/uploads/2022/07/proveedor-pan-hamburguesas.jpg',
+    url:'https://static.vecteezy.com/system/resources/thumbnails/021/665/613/small/beef-burger-isolated-png.png',
     },
 ]
 const sandwichwsection = document.querySelector('#sandwiches');
