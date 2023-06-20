@@ -2,7 +2,16 @@
 let btnGuardar = document.getElementById('agregarGuardar');
 btnGuardar.addEventListener('click', agregarProductos);
 let borrarProd = document.querySelector(".borrar-producto");
-let btnEditar = document.addEventListener
+let editarGuardar = document.getElementById('editarGuardar');
+ let btnEditar = document.querySelectorAll('.editar-producto');
+btnEditar.forEach((btn) => {
+  btn.addEventListener('click', () => {
+    const id = btn.dataset.id;
+    mostrarProductoEditar(id);
+  });
+});
+
+
 
 let productos = JSON.parse(localStorage.getItem("listaProductos")) || [];
 
@@ -29,7 +38,7 @@ function mapearProductos(arrayProd) {
 
 function sacarLocal() {
     let tableBody = document.getElementById('table-body');
-
+   
     tableBody.innerHTML = '';
 
     productos.forEach((producto) => {
@@ -42,7 +51,7 @@ function sacarLocal() {
         <td class="text-start">${producto.descripcion}</td>
         <td>#${producto.id}</td>
         <th>
-          <button type="button" class="btn editar-producto btn-secondary btn-sm mb-1"  data-bs-toggle="modal" data-bs-target="#modalEditar">Editar</button>
+        <button type="button" class="btn editar-producto btn-secondary btn-sm mb-1" data-bs-toggle="modal" data-bs-target="#modalEditar" data-id="${producto.id}">Editar</button>
           <button type="button" class="btn borrar-producto btn-danger btn-sm mb-1" onclick="eliminarProducto('${producto.id}')">Borrar</button>
         </th>
         `;
@@ -100,3 +109,28 @@ const eliminarProducto = (id) => {
 
 
 
+// function mostrarProductoEditar(id) {
+//     const producto = productos.find((p) => p.id === id);
+//     if (producto) {
+//       document.getElementById('modalCategoria').value = producto.categoria;
+//       document.getElementById('modalNombre').value = producto.nombre;
+//       document.getElementById('modalPrecio').value = producto.precio;
+//       document.getElementById('modalDescripcion').value = producto.descripcion;
+//       document.getElementById('editarId').value = producto.id;
+//     }
+//   }
+
+  
+//   function editarProducto() {
+//     const id = document.getElementById('editarId').value;
+//     const index = productos.findIndex((producto) => producto.id === id);
+//     if (index !== -1) {
+//       productos[index].categoria = document.getElementById('modalCategoria').value;
+//       productos[index].nombre = document.getElementById('modalNombre').value;
+//       productos[index].precio = document.getElementById('modalPrecio').value;
+//       productos[index].descripcion = document.getElementById('modalDescripcion').value;
+//       guardarLocal();
+//       sacarLocal();
+//       $('#modalEditar').modal('hide');
+//     }
+//   }
