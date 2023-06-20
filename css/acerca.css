@@ -125,3 +125,77 @@ p {
     cursor: pointer;
 }
 
+/* pagnosotros */
+
+.history {
+   display: flex;
+   justify-content: center;
+    margin-top: 3rem;
+}
+
+.goals {
+    display: flex;
+    justify-content: center; 
+    margin: 3rem 0rem;
+}
+
+.textGoals {
+    display: grid;
+     width: 40%;
+      margin: 5rem 2rem;
+}
+
+.us {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 4rem;
+}
+
+.imgGoals {
+    width: 90%;
+     border-radius: 10px;
+}
+
+.textHistory {
+    display: grid;
+     width: 40%;
+      margin: 5rem 2rem;
+}
+
+@media screen and (max-width: 768px){
+
+    .history {
+        display: grid;
+    }
+
+    .imgHistory {
+        display: flex;
+        justify-content: center;
+    }
+
+    .goals {
+        display: grid;
+    }
+
+    .imgGoals {
+       margin: 1rem;
+    }
+
+    .textGoals {
+        display: grid;
+        width: 90%;
+        margin: 5rem 2rem;
+    }
+
+    .us {
+        display: grid;
+    }
+
+    .textHistory {
+        display: grid;
+        width: 90%;
+        margin: 5rem 2rem;
+    }
+
+
+}
