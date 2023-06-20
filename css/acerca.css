@@ -185,8 +185,8 @@ p {
 
     .textGoals {
         display: grid;
-        width: 90%;
-        margin: 5rem 2rem;
+        width: 80%;
+        padding: 1rem;
     }
 
     .us {
@@ -195,8 +195,8 @@ p {
 
     .textHistory {
         display: grid;
-        width: 90%;
-        margin: 5rem 2rem;
+        width: 80%;
+        padding: 1rem;
     }
 
 
