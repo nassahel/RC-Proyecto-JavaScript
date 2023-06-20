@@ -152,8 +152,9 @@ p {
 }
 
 .imgGoals {
-    width: 90%;
+    width: 60%;
      border-radius: 10px;
+     margin: 1rem;
 }
 
 .textHistory {
@@ -179,6 +180,7 @@ p {
 
     .imgGoals {
        margin: 1rem;
+       width: 90%;
     }
 
     .textGoals {
