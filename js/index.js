@@ -1,56 +1,4 @@
-// const search = document.querySelector('#search');
-// const form = document.querySelector('#form');
-
-// form.addEventListener('submit', function(event){
-//     event.preventDefault();
-//     console.log(search.name);
-// })
-
-
-
-/// LO MAS BUSCADO //
-const lomasbuscado= [
-    {name: 'Pizza Napolitana',
-     price: '$1800',
-     url:'https://avantipizzas.com.ar/wp-content/uploads/2022/04/napolitana-con-albahaca-pizzas-avanti-300x300.jpg'},
-    {name:'Empanadas de ternera',
-     price: '$2000',
-     url:'https://tiendadeempanadas.com.ar/wp-content/uploads/2020/07/POLlO-300x300.jpg'},
-    {name:'Coca cola 2lts',
-     price: '$850',
-     url:'https://trajineras.com/wp-content/uploads/2020/02/cocacola_2.5lts.png'},
-     {name:'Cerveza Quilmes',
-     price: '$700',
-     url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrVXyPS5zCxuNgSQneFSpZek0whs9ZGHFV1g&usqp=CAU',
-     },
-]
-
-
-const buscadoSection = document.querySelector('#lomasbuscado');
-
-let countCard = 0;
-
-function addCard() {
-    const itemsCard = document.querySelector('#modalBody');
-
-    countCard =  countCard + 1
-    itemsCard.innerText = countCard
-}
-
-lomasbuscado.forEach(function (buscado) {
-    let card = document.createElement('div');
-    card.classList.add('card')
-
-    let item =`
-    <img src=${buscado.url} alt=${buscado.name}/>
-    <p>${buscado.name}</p>
-    <button type="submit" onclick="addCard()">${buscado.price}</button>
-    `;
-    
-    card.innerHTML = item;
-    buscadoSection.appendChild(card);
-})
- /// PIZZAS ////
+///---------------------------------------------------------------------- PIZZAS------------------------------------------------------- ////
 
 const pizzas= [
     {name:'Pizza Napolitana',
@@ -59,7 +7,7 @@ const pizzas= [
     {name:'Pizza de muzzarella',
      price: '$2300',
      url: 'https://avantipizzas.com.ar/wp-content/uploads/2022/04/roquefort-pizzas-avanti-300x300.jpg'},
-    {name:'PIzza de Calabresa',
+    {name:'Pizza de Calabresa',
      price: '$2500',
      url: 'https://avantipizzas.com.ar/wp-content/uploads/2022/04/calabressa-pizzas-avanti-300x300.jpg'},
     {name:'Pizza de Fugazzeta',
@@ -91,7 +39,7 @@ pizzas.forEach(function (Pizza) {
     pizzaSection.appendChild(card);
     
 })
-/// MINUTAS ////
+//----------------------------------------------------------------------- MINUTAS------------------------------------------------------ ////
 
 const minutas=[ 
     {name:'Pechuga c/guarnicion',
@@ -135,7 +83,7 @@ minutas.forEach(function (Minutas) {
     minutaSection.appendChild(card);
     
 })
-/// EMPANADASSS ////
+///---------------------------------------------------------------------- EMPANADASSS------------------------------------------------ ////
 
 const empanadas=[
     {name:'Empanada de carne',
@@ -180,7 +128,7 @@ empanadas.forEach(function (Empanadas) {
     empanadaSection.appendChild(card);
     
 })
-//// SANDWICHES ///
+//// ------------------------------------------------------------SANDWICHES----------------------------------------------------------------- ///
 
 const sandwiches= [
     {name:'Sandwich de Milanesa',
@@ -223,7 +171,7 @@ sandwiches.forEach(function (Sandiwiches) {
     sandwichwsection.appendChild(card);
     
 })
-/// BEBIDAS //
+///-------------------------------------------------------------- BEBIDAS ---------------------------------------------------------------//
 const bebidas=[
     {name:'Coca cola 2lts',
     price: '$600',
@@ -268,36 +216,101 @@ bebidas.forEach(function (Bebidas) {
 })
 
 
-/*---------------------------------*/
-
-
+/*--------------------------------------------------------------- EVENTO FORMULARIO----------------------------------------------------------*/
 const search = document.querySelector('#search');
 const btnSearch = document.querySelector('#btn-search');
 const searchProduct = document.querySelector('#search-product');
-const form = document.querySelector('.d');
-
-form.addEventListener('submit', function (event) {
-    searchProduct.innerHTML = ''
-    event.preventDefault();
-    
-    
+const form = document.querySelector('form');
+//------------------------------------------------------------------EVENTO DE LOS PRODUCTOS--------------------------------------------------------------//
+function renderSearchProduct(params) {
     let pizzaSection = pizzas.find(function (Pizza) {
-        if(Pizza.name === search.value) return Pizza;
-    
+        if(Pizza.name === search.value)return Pizza;
+        
     });
-    if(pizzaSection !== undefined) {
-        searchProduct.innerHTML = `<h3> PRODUCTO ENCONTRADO </h3>`;
-        let item = ` 
-        <div class=card> 
+    let minutaSection = minutas.find(function (Minutas) {
+        if(Minutas.name === search.value)return Minutas;
+     });
+     let empanadaSection = empanadas.find(function (Empanadas) {
+        if(Empanadas.name === search.value)return Empanadas;
+     });
+     let sandwichwsection = sandwiches.find(function (Sandiwiches) {
+        if(Sandiwiches.name === search.value)return Sandiwiches;
+    });
+    let bebidaSection = bebidas.find(function (Bebidas) {
+         if(Bebidas.name === search.value)return Bebidas;
+     });
+    if(pizzaSection !== undefined){
+        searchProduct.innerHTML = `<h3 class=buscador>Producto encontrado</h3>`;
+
+        let item = `
+        <div class=buscador>
         <img src=${pizzaSection.url} alt=${pizzaSection.name}/>
         <p>${pizzaSection.name}</p>
-        <p>${pizzaSection.price}</p>
-        </div>
-    `;
-    searchProduct.innerHTML += item;
+        <button type="submit" onclick="addCard()">${pizzaSection.price}</button>
+        </div>`;
+
+
+        searchProduct.innerHTML += item;
+
+    }else if(minutaSection !== undefined ){
+        searchProduct.innerHTML = `<h3 class=buscador>Producto encontrado</h3>`;
+
+                let item = `
+                <div class=buscador>
+                <img src=${minutaSection.url} alt=${minutaSection.name}/>
+                <p>${minutaSection.name}</p>
+                <button type="submit" onclick="addCard()">${minutaSection.price}</button>
+                </div>`;
+        
+                searchProduct.innerHTML += item;
+    }else if (empanadaSection !== undefined){
+                searchProduct.innerHTML = `<h3 class=buscador>Producto encontrado</h3>`;
+        
+                let item = `
+                <div class=buscador>
+                <img src=${empanadaSection.url} alt=${empanadaSection.name}/>
+                <p>${empanadaSection.name}</p>
+                <button type="submit" onclick="addCard()">${empanadaSection.price}</button>
+                </div>`;
+        
+                searchProduct.innerHTML += item;
+
+    }else if (sandwichwsection !== undefined){
+                searchProduct.innerHTML = `<h3 class=buscador>Producto encontrado</h3>`;
+        
+                let item = `
+                <div class=buscador>
+                <img src=${sandwichwsection.url} alt=${sandwichwsection.name}/>
+                <p>${sandwichwsection.name}</p>
+                <button type="submit" onclick="addCard()">${sandwichwsection.price}</button>
+                </div>`;
+        
+                searchProduct.innerHTML += item;
+        
+    }else if (bebidaSection !== undefined){
+                searchProduct.innerHTML = `<h3 class=buscador>Producto encontrado</h3>`;
+        
+                let item = `
+                <div class=buscador>
+                <img src=${bebidaSection.url} alt=${bebidaSection.name}/>
+                <p>${bebidaSection.name}</p>
+                <button type="submit" onclick="addCard()">${bebidaSection.price}</button>
+                </div>`;
+        
+                searchProduct.innerHTML += item;
+        
     }
 
-       
-        
     
+}
+form.addEventListener('submit', function(event){
+    searchProduct.innerHTML ='';
+    pizzaSection.innerHTML ='';
+    minutaSection.innerHTML ='';
+    empanadaSection.innerHTML ='';
+    sandwichwsection.innerHTML ='';
+    bebidaSection.innerHTML ='';
+    event.preventDefault();
+
+    renderSearchProduct();
 });

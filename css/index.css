@@ -1,3 +1,4 @@
+/*------------------------------------------------- TITULO------------------------------------------ */
 .animated-word{
     display: flex;
     align-items: center;
@@ -15,13 +16,7 @@
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
-
-
-
-
-
-
+/*-------------------------------------------------FIN DE TITULO------------------------------------------ */
 :root {
     --yale-blue-boton: rgb(59, 137, 211);
     --naranja-categoria: #ee964bff;
@@ -47,25 +42,6 @@
     background-color: white;
 }
 
-.btn-pedido {
-    background-color: var(--yale-blue-boton);
-    color: whitesmoke;
-}
-
-.btn-pedido:hover {
-    background-color: rgb(24, 101, 173);
-    color: whitesmoke;
-}
-
-.btn-pedido:active {
-    background-color: rgb(31, 127, 216) !important;
-    color: whitesmoke !important;
-}
-
-.btn-buscar {
-    background: var(--dregradado);
-}
-
 body {
     min-height: 100vh;
     display: flex;
@@ -85,11 +61,6 @@ footer {
     width: 50px;
 }
 
-.formu {
-    max-width: 15rem;
-}
-
-
 .redesSociales img {
     width: 4vh;
     margin: 0 0.2vh;
@@ -99,30 +70,16 @@ footer {
     align-items: center;
     text-align: center;
 }
+
 .buscador{
     align-items: center;
     text-align: center;
     
 }
-.products1 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-    gap: 2rem;
-    
-}
-#lomasbuscado {
-    display: flex;
-    gap: 2rem;
-    
-}
-
+/*--------------------------------------------------------- TARJETA--------------------------------------*/
 .card{
     background: rgb(15, 15, 15);
-    max-width: 200px;
+    max-width: 300px;
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -132,13 +89,14 @@ footer {
     
     
 }
+/*-------------------------------------------------IMAGEN DE LA TARJETA------------------------------------------ */
 .card img{
     margin: 50px;
     max-width: 200px;
     border-radius: 5px;
     
 }
-    
+    /*------------------------------------------------- SECCION PIZZA------------------------------------------ */
 .products2{
     display: flex;
     flex-direction: column;
@@ -153,6 +111,7 @@ footer {
     gap: 2rem;
     
 }
+/*------------------------------------------------- SECCION MINUTAS------------------------------------------ */
 .products3{
     display: flex;
     flex-direction: column;
@@ -167,6 +126,7 @@ footer {
     display: flex;
     gap: 2rem;
 }
+/*------------------------------------------------- SECCION EMPANADAS------------------------------------------ */
 .products4{
     display: flex;
     flex-direction: column;
@@ -180,6 +140,7 @@ footer {
     display: flex;
     gap: 2rem;
 }
+/*------------------------------------------------- SECCION SANDWICHES------------------------------------------ */
 .products5{
     display: flex;
     flex-direction: column;
@@ -193,6 +154,7 @@ footer {
     display: flex;
     gap: 2rem;
 }
+/*------------------------------------------------- SECCION  BEBIDAS------------------------------------------ */
 .products6{
     display: flex;
     flex-direction: column;
