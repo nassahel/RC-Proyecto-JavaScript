@@ -15,7 +15,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* background-color: var(--naples-yellow); */
     background: var(--dregradado);
 }
 
@@ -32,6 +31,7 @@ body {
 .dropdown-menu {
     background-color: white;
 }
+
 
 /* ---------------FOOTER------------------ */
 
@@ -98,8 +98,7 @@ footer {
 
 .prod-carrit {
     background: var(--naranja-categoria);
-    /* color: white; */
-    /* max-height: 7rem ; */
+   
 }
 
 
