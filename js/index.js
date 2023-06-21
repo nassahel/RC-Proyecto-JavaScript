@@ -17,14 +17,6 @@ const pizzas= [
 
 const pizzaSection = document.querySelector('#pizzas');
 
-
-function addCard() {
-    const itemsCard = document.querySelector('#modalBody');
-
-    countCard =  countCard + 1
-    itemsCard.innerText = countCard
-}
-
 pizzas.forEach(function (Pizza) {
     let card = document.createElement('div');
     card.classList.add('card')
@@ -60,14 +52,6 @@ const minutas=[
     },
 ]
 const minutaSection = document.querySelector('#minutas');
-
-
-function addCard() {
-    const itemsCard = document.querySelector('#modalBody');
-
-    countCard =  countCard + 1
-    itemsCard.innerText = countCard
-}
 
 minutas.forEach(function (Minutas) {
     let card = document.createElement('div');
@@ -105,14 +89,6 @@ const empanadas=[
 
 
 ]
-const empanadaSection = document.querySelector('#empanadas');
-
-function addCard() {
-    const itemsCard = document.querySelector('#modalBody');
-
-    countCard =  countCard + 1
-    itemsCard.innerText = countCard
-}
 
 empanadas.forEach(function (Empanadas) {
     let card = document.createElement('div');
@@ -148,14 +124,6 @@ const sandwiches= [
     url:'https://static.vecteezy.com/system/resources/thumbnails/021/665/613/small/beef-burger-isolated-png.png',
     },
 ]
-const sandwichwsection = document.querySelector('#sandwiches');
-
-function addCard() {
-    const itemsCard = document.querySelector('#modalBody');
-
-    countCard =  countCard + 1
-    itemsCard.innerText = countCard
-}
 
 sandwiches.forEach(function (Sandiwiches) {
     let card = document.createElement('div');
@@ -191,15 +159,6 @@ const bebidas=[
     }
 ]
 
-const bebidaSection = document.querySelector('#bebidas');
-
-function addCard() {
-    const itemsCard = document.querySelector('#modalBody');
-
-    countCard =  countCard + 1
-    itemsCard.innerText = countCard
-}
-
 bebidas.forEach(function (Bebidas) {
     let card = document.createElement('div');
     card.classList.add('card')
@@ -214,6 +173,30 @@ bebidas.forEach(function (Bebidas) {
     bebidaSection.appendChild(card);
     
 })
+/*----------------------------------------------Carrito------------- */
+const cartinfo =document.querySelector('modal-body');
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*--------------------------------------------------------------- EVENTO FORMULARIO----------------------------------------------------------*/

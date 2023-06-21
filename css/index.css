@@ -44,9 +44,8 @@
 
 body {
     min-height: 100vh;
-    display: flex;
+    display: block;
     flex-direction: column;
-    /* background-color: var(--naples-yellow); */
     background: var(--dregradado);
     box-sizing: border-box;
     font-family: sans-serif;
@@ -86,46 +85,38 @@ button{
 /*--------------------------------------------------------- TARJETA--------------------------------------*/
 .card{
     background: rgb(15, 15, 15);
-   
-    height: 100px;
-    display: flex;
+    width: 50%;
+    height: 50%;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     margin-bottom: 20px;
+    text-align: center;
     
     
 }
 /*-------------------------------------------------IMAGEN DE LA TARJETA------------------------------------------ */
 .card img{
     margin: 50px;
-    max-width: 200px;
+    width: 50%;
     border-radius: 5px;
-    
+    display: block;
 }
-@media (max-width:640px){
-    .products2{
-        display: block;
-        width: 400px;
-    }
-    .card{
-        padding: 5px 20px 20px 20px;
-        border: none;
-    }
-    .card img{
-        padding: 5px 20px 20px 20px;
-        background: transparent;
-    }
-    
+h2{
+    text-align: center;
+}
 
-}
+
     /*------------------------------------------------- SECCION PIZZA------------------------------------------ */
 .products2{
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
     gap: 2rem;
 }
@@ -136,11 +127,13 @@ button{
 }
 /*------------------------------------------------- SECCION MINUTAS------------------------------------------ */
 .products3{
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
     gap: 2rem;
     
@@ -151,11 +144,13 @@ button{
 }
 /*------------------------------------------------- SECCION EMPANADAS------------------------------------------ */
 .products4{
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
     gap: 2rem;
 }
@@ -165,11 +160,13 @@ button{
 }
 /*------------------------------------------------- SECCION SANDWICHES------------------------------------------ */
 .products5{
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
     gap: 2rem;
 }
@@ -179,11 +176,13 @@ button{
 }
 /*------------------------------------------------- SECCION  BEBIDAS------------------------------------------ */
 .products6{
-    display: flex;
+    display: block;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
     background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
     gap: 2rem;
 }
