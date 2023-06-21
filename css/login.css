@@ -15,7 +15,6 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    /* background-color: var(--naples-yellow); */
     background: var(--dregradado);
 }
 
@@ -30,17 +29,9 @@ body {
 
 .product,
 .dropdown-menu {
-    background-color: white;
+    background-color: white !important;
 }
 
-.nav-item {
-    position: relative;
- }
-
-
- .form-control {
-    background-color: white;
-}
 
 /* ---------------FOOTER------------------ */
 
@@ -54,6 +45,8 @@ footer {
     margin-top: auto;
     background: var(--moradito);
 }
+
+
 
 
 .categoria {
@@ -85,7 +78,9 @@ footer {
     height: 13rem;
     object-fit: cover;
 }
-
+ .nav-item {
+    position: relative;
+ }
 .contador-carrito {
     background-color: red;
     color: white;
@@ -103,6 +98,7 @@ footer {
 
 .prod-carrit {
     background: var(--naranja-categoria);
+   
 }
 
 
@@ -110,7 +106,9 @@ p {
     margin: 0;
 }
 
-
+.form-control {
+    background-color: white !important;
+}
 
 .total-div {
     background-color: var(--moradito);
