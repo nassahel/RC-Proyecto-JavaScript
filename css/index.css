@@ -77,13 +77,16 @@ footer {
     
     
 }
+button{
+    background: #c8c7d0;
+}
 #search{
     width: 500px;
 }
 /*--------------------------------------------------------- TARJETA--------------------------------------*/
 .card{
     background: rgb(15, 15, 15);
-    max-width: 300px;
+   
     height: 100px;
     display: flex;
     flex-direction: column;
@@ -99,6 +102,22 @@ footer {
     max-width: 200px;
     border-radius: 5px;
     
+}
+@media (max-width:640px){
+    .products2{
+        display: block;
+        width: 400px;
+    }
+    .card{
+        padding: 5px 20px 20px 20px;
+        border: none;
+    }
+    .card img{
+        padding: 5px 20px 20px 20px;
+        background: transparent;
+    }
+    
+
 }
     /*------------------------------------------------- SECCION PIZZA------------------------------------------ */
 .products2{
