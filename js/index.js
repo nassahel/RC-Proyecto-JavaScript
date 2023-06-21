@@ -24,7 +24,7 @@ pizzas.forEach(function (Pizza) {
     let item = ` 
     <img src=${Pizza.url} alt=${Pizza.name}/>
     <p>${Pizza.name}</p>
-    <button class="addToCard"  type="submit">${Pizza.price}</button>
+    <button type="submit" onclick="addCard()">${Pizza.price}</button>
     `;
 
     card.innerHTML = item;
@@ -60,7 +60,7 @@ minutas.forEach(function (Minutas) {
     let item = ` 
     <img src=${Minutas.url} alt=${Minutas.name}/>
     <p>${Minutas.name}</p>
-    <button class="addToCard"  type="submit">${Minutas.price}</button>
+    <button type="submit" onclick="addCard()">${Minutas.price}</button>
     `;
 
     card.innerHTML = item;
@@ -89,7 +89,6 @@ const empanadas=[
 
 
 ]
-const empanadaSection = document.querySelector('#empanadas');
 
 empanadas.forEach(function (Empanadas) {
     let card = document.createElement('div');
@@ -98,7 +97,7 @@ empanadas.forEach(function (Empanadas) {
     let item = ` 
     <img src=${Empanadas.url} alt=${Empanadas.name}/>
     <p>${Empanadas.name}</p>
-    <button class="addToCard"  type="submit" >${Empanadas.price}</button>
+    <button type="submit" onclick="addCard()">${Empanadas.price}</button>
     `;
 
     card.innerHTML = item;
@@ -125,7 +124,6 @@ const sandwiches= [
     url:'https://static.vecteezy.com/system/resources/thumbnails/021/665/613/small/beef-burger-isolated-png.png',
     },
 ]
-const sandwichwsection = document.querySelector('#sandwiches');
 
 sandwiches.forEach(function (Sandiwiches) {
     let card = document.createElement('div');
@@ -134,7 +132,7 @@ sandwiches.forEach(function (Sandiwiches) {
     let item = ` 
     <img src=${Sandiwiches.url} alt=${Sandiwiches.name}/>
     <p>${Sandiwiches.name}</p>
-    <button class="addToCard"  type="submit">${Sandiwiches.price}</button>
+    <button type="submit" onclick="addCard()">${Sandiwiches.price}</button>
     `;
 
     card.innerHTML = item;
@@ -160,7 +158,6 @@ const bebidas=[
      url:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTrVXyPS5zCxuNgSQneFSpZek0whs9ZGHFV1g&usqp=CAU',
     }
 ]
-const bebidaSection = document.querySelector('#bebidas');
 
 bebidas.forEach(function (Bebidas) {
     let card = document.createElement('div');
@@ -169,7 +166,7 @@ bebidas.forEach(function (Bebidas) {
     let item = ` 
     <img src=${Bebidas.url} alt=${Bebidas.name}/>
     <p>${Bebidas.name}</p>
-    <button  class="addToCard"type="submit" >${Bebidas.price}</button>
+    <button type="submit" onclick="addCard()" >${Bebidas.price}</button>
     `;
 
     card.innerHTML = item;
@@ -177,6 +174,17 @@ bebidas.forEach(function (Bebidas) {
     
 })
 /*----------------------------------------------Carrito------------- */
+const cartinfo =document.querySelector('modal-body');
+
+
+
+
+
+
+
+
+
+
 
 
 
