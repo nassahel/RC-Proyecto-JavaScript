@@ -46,7 +46,9 @@ footer {
     background: var(--moradito);
 }
 
-
+.acerca:hover {
+    text-decoration: underline !important;
+}
 
 
 .categoria {

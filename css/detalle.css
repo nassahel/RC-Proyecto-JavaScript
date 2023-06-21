@@ -47,7 +47,9 @@ footer {
 }
 
 
-
+.acerca:hover {
+    text-decoration: underline !important;
+}
 
 .categoria {
     background-color: #F95738;

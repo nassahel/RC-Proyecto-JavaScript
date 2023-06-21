@@ -42,6 +42,11 @@
     background-color: white;
 }
 
+
+.acerca:hover {
+    text-decoration: underline !important;
+}
+
 body {
     min-height: 100vh;
     display: flex;

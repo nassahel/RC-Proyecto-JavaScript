@@ -15,7 +15,7 @@ let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
 
 sandwichs.forEach((producto) => {
     let item = document.createElement("section");
-    item.className = "row col-11 p-2 new-sand bg-white my-4 shadow d-flex align-items-center justify-content-evenly"
+    item.className = "row col-11 p-2 new-sand bg-white my-4 shadow d-flex align-items-center justify-content-evenly rounded"
     item.innerHTML = `
     
         <img class="col col-12 col-lg-3" src=${producto.Imagen}>

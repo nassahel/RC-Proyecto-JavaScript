@@ -27,7 +27,7 @@ body {
 
 .product,
 .dropdown-menu {
-    background-color: white;
+    background-color: white !important;
 }
 
 .nav-item {
@@ -36,10 +36,14 @@ body {
 
 
  .form-control {
-    background-color: white;
+    background-color: white !important;
 }
 
 /* ---------------FOOTER------------------ */
+
+.acerca:hover {
+    text-decoration: underline !important;
+}
 
 .redesSociales img {
     width: 4vh;
@@ -198,3 +202,5 @@ p {
 
 
 }
+
+
