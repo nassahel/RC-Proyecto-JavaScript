@@ -44,7 +44,7 @@
 
 body {
     min-height: 100vh;
-    display: block;
+    display: flex;
     flex-direction: column;
     background: var(--dregradado);
     box-sizing: border-box;
@@ -76,117 +76,34 @@ footer {
     
     
 }
-button{
-    background: #c8c7d0;
-}
 #search{
     width: 500px;
 }
-/*--------------------------------------------------------- TARJETA--------------------------------------*/
-.card{
-    background: rgb(15, 15, 15);
-    width: 50%;
-    height: 50%;
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-    text-align: center;
-    
-    
+
+
+.card {
+    width: 18rem !important;
 }
-/*-------------------------------------------------IMAGEN DE LA TARJETA------------------------------------------ */
-.card img{
-    margin: 50px;
-    width: 50%;
-    border-radius: 5px;
-    display: block;
-}
-h2{
-    text-align: center;
+
+.titulos {
+    background: var(--moradito);
 }
 
 
-    /*------------------------------------------------- SECCION PIZZA------------------------------------------ */
-.products2{
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-    gap: 2rem;
+.titulos a {
+    text-decoration: none;
+    color: var(--naranja-categoria);
 }
-#pizzas {
-    display: flex;
-    gap: 2rem;
-    
+
+
+.card img {
+    object-fit: cover;
 }
-/*------------------------------------------------- SECCION MINUTAS------------------------------------------ */
-.products3{
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-    gap: 2rem;
-    
+
+.titulos a {
+transition-duration: 300ms;
 }
-#minutas {
-    display: flex;
-    gap: 2rem;
+.titulos a:hover {
+   color: #e6fd61;
 }
-/*------------------------------------------------- SECCION EMPANADAS------------------------------------------ */
-.products4{
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-    gap: 2rem;
-}
-#empanadas {
-    display: flex;
-    gap: 2rem;
-}
-/*------------------------------------------------- SECCION SANDWICHES------------------------------------------ */
-.products5{
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-    gap: 2rem;
-}
-#sandwiches {
-    display: flex;
-    gap: 2rem;
-}
-/*------------------------------------------------- SECCION  BEBIDAS------------------------------------------ */
-.products6{
-    display: block;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 90%;
-    max-width: 1200px;
-    margin: 0 auto;
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-    gap: 2rem;
-}
-#bebidas {
-    display: flex;
-    gap: 2rem;
-}
+
