@@ -1,4 +1,4 @@
-
+///////////////////////////////obtener elementos del html///////////////////
 let btnGuardar = document.getElementById('agregarGuardar');
 btnGuardar.addEventListener('click', agregarProductos);
 let borrarProd = document.querySelector(".borrar-producto");
@@ -11,7 +11,7 @@ btnEditar.forEach((btn) => {
   });
 });
 
-
+///////////////////////creacion de la tabla de manera dianmica ///////////////////////////
 
 let productos = JSON.parse(localStorage.getItem("listaProductos")) || [];
 
@@ -61,6 +61,9 @@ function sacarLocal() {
 
 sacarLocal();
 
+
+/////////////////////////////agregar mas productos a la tabla///////////////////////////////
+
 function agregarProductos() {
     let txtCategoria = document.getElementById('agregarCategoria').value;
     let txtNombre = document.getElementById('agregarNombre').value;
@@ -98,6 +101,10 @@ function guardarLocal() {
     localStorage.setItem("listaProductos", JSON.stringify(productos));
 }
 
+
+
+/////////////////////////////eliminar productos de la tabla///////////////////////////////////
+
 const eliminarProducto = (id) => {
     const index = productos.findIndex((producto) => producto.id === id);
     if (index !== -1) {
@@ -108,6 +115,7 @@ const eliminarProducto = (id) => {
 };
 
 
+//////////////////////////////editar productos de la tabla////////////////////////////////////
 
 // function mostrarProductoEditar(id) {
 //     const producto = productos.find((p) => p.id === id);

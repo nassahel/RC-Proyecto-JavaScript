@@ -1,10 +1,17 @@
+// /////////////////////Obtener elementos del dom///////////////////////
+
 let sandwichBox = document.getElementById("sandwich-box");
 let verCarrito = document.getElementById("ver-carrito")
 let modalBody = document.getElementById("modalBody")
 let totalCompra = document.getElementById("total");
 let contCarrito = document.getElementById("contadorCarrito")
 
+////////////////////////guardar carrito en local storage//////////////////////
+
 let carrito = JSON.parse(localStorage.getItem("carrito")) || [];
+
+
+////////////////////cracion de tarjetas dinamicas en la pagina//////////////////////
 
 sandwichs.forEach((producto) => {
     let item = document.createElement("section");
@@ -20,18 +27,13 @@ sandwichs.forEach((producto) => {
         </div>
     
         `;
-
     sandwichBox.append(item);
-
-
 
     let comprar = document.createElement("button");
     comprar.className = "col h-25 col-lg-1 btn btn-agregar"
     comprar.innerText = "Comprar";
 
     item.append(comprar)
-
-
 
     comprar.addEventListener("click", () => {
         carrito.push({
@@ -45,9 +47,10 @@ sandwichs.forEach((producto) => {
         carritoCont();
         guardarLocal();
     });
-
 });
 
+
+/////////////////////////////////ekiminar producto//////////////////////////////////
 
 const eliminarProducto = (id) => {
     carrito = carrito.filter((producto) => producto.id !== id);
@@ -85,10 +88,10 @@ verCarrito.addEventListener("click", () => {
     })
 
     const total = carrito.reduce((acc, el) => acc + el.precio, 0);
-
     totalCompra.innerText = total;
 })
 
+//////////////////////////////contador de productos en el carrito/////////////////////////////////////
 
 function carritoCont() {
     if (carrito.length === 0) {
