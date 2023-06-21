@@ -88,6 +88,12 @@ footer {
 
 .card {
     width: 18rem !important;
+    height: 24rem !important;
+
+}
+
+.card img {
+    height: 70%;
 }
 
 .titulos {
