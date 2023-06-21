@@ -1,47 +1,30 @@
+const formulario = document.getElementById("formulario");
 
+formulario.addEventListener("submit", (e) => login(e));
 
-function login(){
-    var user, pass;
+function login(e) {
+  e.preventDefault();
+  const user = document.getElementById("users").value;
+  const pass = document.getElementById("password").value;
+  const visible = document.getElementById("visible").value;
 
-    user = document.getElementById("users").value;
-    pass = document.getElementById("password").value;
+  console.log(user);
+  console.log(pass);
 
-   if(user == "admin23" && pass == "987654321"){
-       window.location.href= "administracion.html"
-   }
-
-   else {
-       alert("Datos incorrectos")
-   }
+  if (user == "admin23" && pass == "123456") {
+    window.location.href = "administracion.html";
+  } else {
+    alert("Datos incorrectos");
+  }
 }
 
+function mostrar() {
+     var tipo = document.getElementById("password");
 
-//const $users = document.getElementById("users")
- //     $pass = document.getElementById("password")
- //     $visible = document.getElementById("visible")
- //     $submit = document.getElementById("submit")
-
-//document.addEventListener("change", (e)=> {
- //    if (e.target === $visible){
- //          if($visible.checked === false) $password.type = "password";
-  //         else $password.type = text;
-  //   }
-//})      
-
-//document.addEventListener("click", (e)=> {
- //    if (e.target === $submit){
-  //      if($password.value !== "" && $username.value !== ""){
-  //          e.preventDefault();
- //           window.location.href = "administracion.html"
-  //      }
-  //   }
-//})
-
-//button.addEventListener('click', (e) => {
- //    e.preventDefault()
- //    const data = {
-  //      username: users.value,
- //       password: password.value
-//
- //    }
-//} )
+     if(tipo.type == 'password') {
+      tipo.type = 'text';
+     }
+     else {
+        tipo.type = 'password' ;
+     }
+}
