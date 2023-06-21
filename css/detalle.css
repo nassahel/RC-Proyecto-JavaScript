@@ -15,6 +15,7 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    /* background-color: var(--naples-yellow); */
     background: var(--dregradado);
 }
 
@@ -32,15 +33,6 @@ body {
     background-color: white;
 }
 
-.nav-item {
-    position: relative;
- }
-
-
- .form-control {
-    background-color: white;
-}
-
 /* ---------------FOOTER------------------ */
 
 .redesSociales img {
@@ -53,6 +45,8 @@ footer {
     margin-top: auto;
     background: var(--moradito);
 }
+
+
 
 
 .categoria {
@@ -84,7 +78,9 @@ footer {
     height: 13rem;
     object-fit: cover;
 }
-
+ .nav-item {
+    position: relative;
+ }
 .contador-carrito {
     background-color: red;
     color: white;
@@ -102,6 +98,8 @@ footer {
 
 .prod-carrit {
     background: var(--naranja-categoria);
+    /* color: white; */
+    /* max-height: 7rem ; */
 }
 
 
@@ -109,7 +107,9 @@ p {
     margin: 0;
 }
 
-
+.form-control {
+    background-color: white;
+}
 
 .total-div {
     background-color: var(--moradito);
@@ -124,18 +124,3 @@ p {
     cursor: pointer;
 }
 
-
-
-/* ------------------------ADMINISTRACION-------------------------- */
-
-
-.borrar-fila {
-    text-align: center;
-    background-color: var(--moradito);
-    width: 2rem;
-    border-radius: 50%;
-    padding-bottom: 5px;
-    cursor: pointer;
-    color: white;
-
-}
