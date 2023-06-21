@@ -5,154 +5,178 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Inicio de Sección</title>
-    <link rel="stylesheet" href="../practico2/stylos.css">
+    <link rel="stylesheet" href="../css/login.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 </head>
+
 <body>
-
-  
-
-   <main style="background-color: rgb(250, 184, 60);">
-
-     
-    <body>
-
-      <!-----------------------INICIO DEL NAV-------------------->
-      <nav class="navbar navbar-expand-lg bg-body-tertiary mb-4 shadow sticky-top"
-        style="background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img class="img-thumbnail" src="../img/logo1.png" alt="Logo" style="width: 100px;">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 w-75">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Ofertas</a>
-              </li>
-              <li class="nav-item dropdown w-50">
-                <a class="nav-link active dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
-                  Categorias
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Empanadas</a></li>
-                  <li><a class="dropdown-item" href="#">Pizzas</a></li>
-                  <li><a class="dropdown-item" href="#">Bebidas</a></li>
-                  <li><a class="dropdown-item" href="#">Minutas</a></li>
-                  <li><a class="dropdown-item" href="#">Sandwiches</a></li>
     
-    
-                </ul>
-              </li>
-              <li class="nav-item d-none d-lg-block w-100">
-                <form class="d-flex w-100">
-                  <input class="form-control me-2 w-100" type="search" placeholder="Buscar" aria-label="Search">
-                  <button class="btn btn-outline-success" type="submit">Buscar</button>
-                </form>
-              </li>
-            </ul>
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">
-                  <img src="../img/bx-cart.png" alt="imagen de carrito">
-                </a>
-              </li>
-            </ul>
-            <form class="d-flex d-lg-none mt-2">
-              <input class="form-control" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-          </div>
+  <!-----------------------INICIO DEL MODAL-------------------->
+  <div class="modal fade" tabindex="-1" id="modal-carrito">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Carrito de compras</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
-      </nav>
-
-
-      <!-----------------------FIN DEL NAV-------------------->
-
-      <!-----------------------INICIO DEL MAIN-------------------->
-
-
-    <div class="creationbox" style="display: flex; justify-content: center; padding: 1% 7%; ">
-
-      <div style="width: 50%;">
-          <img class="portadacreation" src="../img/IMG-20230607-WA00302.jpg" style="height: 100%; width: 100%;"  alt="">
-  
+        <div class="modal-body" id="modalBody">
+        </div>
+        <div class="text-center total-div text-white py-2 h6">Total: $ <span id="total"></span></div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Realizar Compra</button>
+        </div>
       </div>
-          
-      <div style="background-color: rgb(255, 255, 255); width: 50%; display: grid; justify-content: space-around;">
-          <div style=" display: flex; justify-content: end;">
-              <img src="../img/logo1.png" style="width: 7rem; height: 6rem; margin: 1rem 1rem;" alt="">
-          </div>
-          <h3 style="display: flex; justify-content: center; margin: 1rem ;">Inicio de Sección</h3>
-          <div style=" margin: 1rem; ">
-
-            <form class="row g-3 needs-validation" novalidate >
-              <div class="mb-3" style="display: grid;">
-                <label for="exampleInputEmail1" class="form-label" id="users">Usuario</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Pepe23">
-              </div>
-              <div class="mb-3" style="display: grid;">
-                <label for="exampleInputPassword1" class="form-label" id="password">Contraseña</label>
-                <input type="password" class="form-control" id="exampleInputPassword">
-              </div>
-              <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                <label class="form-check-label" for="exampleCheck1">mostrar contraseña</label>
-              </div>
-              <div class="d-grid gap-2 col-12">
-                <button class="btn btn-primary" type="submit">Crear</button>
-              </div>
-            </form>  
-
-          </div>
-  
-      </div>
+    </div>
   </div>
 
 
-      <!-----------------------FIN DEL MAIN-------------------->
+
+  <!-----------------------FIN DEL MODAL-------------------->
 
 
-      <!-----------------------INICIO DEL FOOTER-------------------->
+
+
+
+  <!-----------------------INICIO DEL NAV-------------------->
+  <nav class="navbar navbar-expand-lg mb-4 shadow sticky-top" data-bs-theme="dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="../index.html">
+        <img class="img" src="../img/logo-transparent-BLANCO.png" alt="Logo" style="width: 100px;">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto  mb-2 mb-lg-0 w-75">
+          <li class="nav-item">
+            <a class="nav-link active text-white" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active text-white" href="../html/pagerror404.html">Ofertas</a>
+          </li>
+          <li class="nav-item dropdown w-50">
+            <a class="nav-link active dropdown-toggle text-white" href="../html/detalle.html" role="button" data-bs-toggle="dropdown"
+              aria-expanded="false">
+              Categorias
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="../html/detalle.html">Empanadas</a></li>
+              <li><a class="dropdown-item" href="../html/detalle.html">Pizzas</a></li>
+              <li><a class="dropdown-item" href="../html/detalle.html">Bebidas</a></li>
+              <li><a class="dropdown-item" href="../html/detalle.html">Minutas</a></li>
+              <li><a class="dropdown-item" href="../html/detalle.html">Sandwiches</a></li>
+            </ul>
+          </li>
+          <li class="nav-item d-none d-lg-block w-100">
+            <form class="d-flex w-100">
+              <input class="form-control me-2 w-100" type="search" placeholder="Buscar" aria-label="Search">
+              <button class="btn btn-buscar" type="submit">Buscar</button>
+            </form>
+          </li>
+        </ul>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" href="#">
+              <img id="ver-carrito" class="logo-carrito" src="../img/carrito-blanco.png" alt="imagen de carrito" data-bs-toggle="modal"
+                data-bs-target="#modal-carrito"> <span id="contadorCarrito" class="contador-carrito">0</span>
+            </a>
+          </li>
+        </ul>
+        <form class="d-flex d-lg-none mt-2">
+          <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-buscar" type="submit">Buscar</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <!-----------------------FIN DEL NAV-------------------->
+
+
+    <!-----------------------INICIO DEL MAIN-------------------->
+
+
+        <main class="creationbox" style="display: flex; justify-content: center; padding: 1% 7%; ">
+
+            <div style="width: 50%;">
+                <img class="portadacreation" src="../img/IMG-20230607-WA00302.jpg" style="height: 100%; width: 100%;"  alt="">
+        
+            </div>
+                
+            <div style="background-color: rgb(255, 255, 255); width: 50%; display: grid; justify-content: space-around;">
+                <div style=" display: flex; justify-content: end;">
+                    <img src="../img/logo-transparent.png" style="width: 9rem; height: 6rem; margin: 2rem 1rem 0rem;" alt="">
+                </div>
+                <h3 style="display: flex; justify-content: center; margin: 1rem ;">Inicio de Sección</h3>
+                <div style=" margin: 1rem; ">
       
-      <footer class="container-fluid p-3" style="background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);">
-        <section class="row d-flex align-items-center justify-content-between text-center">
-          <section class="redesSociales col-sm-11 col-lg-4 mb-1">
-            <a href="#"><img src="../img/instagram.png" style="width: 4vh;
-              margin: 0 0.2vh;" alt=""></a>
-            <a href="#"><img src="../img/facebook.png" style="width: 4vh;
-              margin: 0 0.2vh;" alt=""></a>
-            <a href="3"><img src="../img/whatsapp.png" style="width: 4vh;
-              margin: 0 0.2vh;" alt=""></a>
-          </section>
-          <section class="col-sm-11 col-lg-4 mb-1">
-          <p>RC Delivery® <br> Todos los derechos registrados</p> 
-          </section>
-          <section class="col-sm-11 col-lg-4 mb-1">
-            <a href="#" class="text-decoration-none">Acerca de nosotros</a>
-          </section>
-    
-        </section>
-    
-      </footer>
+                  <form class="row g-3 needs-validation" id="formulario" novalidate>
+                    <div class="mb-3" style="display: grid;">
+                      <label for="users" class="form-label">Usuario</label>
+                      <input type="email" class="form-control" id="users" aria-describedby="emailHelp" placeholder="username">
+                    </div>
+                    <div class="mb-3" style="display: grid;">
+                      <label for="password" class="form-label">Contraseña</label>
+                      <input type="password" class="form-control" id="password" placeholder="password">
+                    </div>
+                    <div class="mb-3 form-check">
+                      <input type="checkbox" class="form-check-input" id="visible" onclick="mostrar()" value="mostrar contraseña">
+                      <label class="form-check-label" for="visible">mostrar contraseña</label>
+                    </div>
+                    <div class="d-grid gap-2 col-12">
+                      <button class="btn btn-primary" type="submit" id="submit">Iniciar sección</button>
+                    </div>
+                  </form>  
+      
+                </div>
+        
+            </div>
+        </main>
+      
+        
+
+    </main>
+  <!-----------------------FIN DEL MAIN-------------------->
+
+
+
+  
+  <!-----------------------INICIO DEL FOOTER-------------------->
+  <footer class="container-fluid p-3">
+    <section class="row d-flex align-items-center justify-content-between text-center text-white">
+      <section class="redesSociales col-sm-11 col-lg-4 mb-1">
+        <a href="../html/pagerror404.html"><img src="../img/instagram.png" alt=""></a>
+        <a href="../html/pagerror404.html"><img src="../img/facebook.png" alt=""></a>
+        <a href="../html/pagerror404.html"><img src="../img/whatsapp.png" alt=""></a>
+      </section>
+      <section class="col-sm-11 col-lg-4 mb-1">
+        Copyright 2023 derechos reservados
+      </section>
+      <section class="col-sm-11 col-lg-4 mb-1">
+        <a href="../html/acerca.html" class="text-decoration-none text-white">Acerca de nosotros</a>
+      </section>
+
+    </section>
+
+  </footer>
 
   <!-----------------------FIN DEL FOOTER-------------------->
 
 
-    
-   </main>
 
 
-   
 
-   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
-    
+
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+    crossorigin="anonymous"></script>
+  <script src="../js/login.js"></script>
+
 </body>
+    
 </html>

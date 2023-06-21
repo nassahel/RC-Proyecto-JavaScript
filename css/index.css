@@ -1,36 +1,109 @@
-.pagprincipal{
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-
-}
-
-.navbar{
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
-}
-.img-thumbnail{
-    width: 100px;
-}
-.imagenes{
+/*------------------------------------------------- TITULO------------------------------------------ */
+.animated-word{
     display: flex;
-    margin: 15px;
+    align-items: center;
+    justify-content: center;
 }
-.card{
-    margin-right: 10px;
-    margin:auto;
-    margin-left: auto;
-    padding: auto;
-    display: block;
-    max-width: 100%;
-    height: auto;
+.letter{
+    transition: 2.9s;
+    transform: translateX(0);
+    cursor: grab;
+    color: #0d0d0e;
 }
-.fondo{
-    background: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+.letter:hover{
+    transform: translateY(-10rem);
+    background: -webkit-linear-gradient(120deg,hsl(19, 90%, 52%), hsl(56, 100% 50%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
-.formu {
-    max-width: 15rem;
+/*-------------------------------------------------FIN DE TITULO------------------------------------------ */
+:root {
+    --yale-blue-boton: rgb(59, 137, 211);
+    --naranja-categoria: #ee964bff;
+    --celeste-hover: rgb(226, 214, 240);
+    --dregradado: linear-gradient(90deg, #e3ffe7 0%, #d9e7ff 100%);
+    --moradito: rgb(27, 2, 44);
+    --boton-hover: rgb(24, 101, 173);
+    --boton-active: rgb(31, 127, 216);
+    /* texto de boton: blanco */
+    /* las tarjetas o secciones van con sombra */
 }
 
+.navbar {
+    background-color: rgb(27, 2, 44);
+}
+
+.categoria {
+    background-color: #F95738;
+}
+
+.product,
+.dropdown-menu {
+    background-color: white;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: var(--dregradado);
+    box-sizing: border-box;
+    font-family: sans-serif;
+   
+}
+footer {
+    margin-top: auto;
+    background: var(--moradito);
+}
+
+.logo-carrito {
+    width: 50px;
+}
 
 .redesSociales img {
     width: 4vh;
     margin: 0 0.2vh;
 }
+.submit{
+    text-align: center;
+    align-items: center;
+}
+
+
+.buscador{
+    align-items: right;
+    text-align: center;
+    
+    
+}
+#search{
+    width: 500px;
+}
+
+
+.card {
+    width: 18rem !important;
+}
+
+.titulos {
+    background: var(--moradito);
+}
+
+
+.titulos a {
+    text-decoration: none;
+    color: var(--naranja-categoria);
+}
+
+
+.card img {
+    object-fit: cover;
+}
+
+.titulos a {
+transition-duration: 300ms;
+}
+.titulos a:hover {
+   color: #e6fd61;
+}
+
