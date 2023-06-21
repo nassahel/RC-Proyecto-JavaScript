@@ -50,7 +50,7 @@ sandwichs.forEach((producto) => {
 });
 
 
-/////////////////////////////////ekiminar producto//////////////////////////////////
+/////////////////////////////////eliminar producto//////////////////////////////////
 
 const eliminarProducto = (id) => {
     carrito = carrito.filter((producto) => producto.id !== id);
@@ -62,7 +62,7 @@ verCarrito.addEventListener("click", () => {
     modalBody.innerHTML = "";
     carrito.forEach((producto) => {
         let carritoContent = document.createElement("div")
-        carritoContent.className = "prod-carrit row mx-2 shadow d-flex align-items-center py-2 mb-2";
+        carritoContent.className = "prod-carrit row mx-2 shadow d-flex align-items-center py-2 mb-2 rounded";
         carritoContent.innerHTML = `
        <img class="col-4" id="imgcar"  src=${producto.imagen}> 
        <div class="col col-6">
