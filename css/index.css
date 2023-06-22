@@ -87,8 +87,9 @@ footer {
 
 
 .card {
-    width: 18rem !important;
-    height: 24rem !important;
+    width: 20% !important;
+     min-width: 13rem !important; 
+    max-height: 20rem !important;
 
 }
 
