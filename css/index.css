@@ -13,7 +13,6 @@
 .letter:hover{
     transform: translateY(-10rem);
     background: -webkit-linear-gradient(120deg,hsl(19, 90%, 52%), hsl(56, 100% 50%));
-    -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 /*-------------------------------------------------FIN DE TITULO------------------------------------------ */
@@ -59,10 +58,6 @@ body {
 footer {
     margin-top: auto;
     background: var(--moradito);
-}
-
-.logo-carrito {
-    width: 50px;
 }
 
 .redesSociales img {
